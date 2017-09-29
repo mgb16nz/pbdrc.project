@@ -1,0 +1,156 @@
+@charset "UTF-8";
+/*!
+ * Pegasus Bay Drag Racing Club v1.0.0 (http://www.pbdrc.com)
+ * Copyright 2017 Pegasus Bay Drag Racing
+ * Customized Theme Layout Styling
+ * Designed by SNAP Web Designs (http://www.snapwebdesigns.co.nz)
+ */
+/*!
+ * Pegasus Bay Drag Racing Club v1.0.0 (http://www.pbdrc.com)
+ * Copyright 2017 Pegasus Bay Drag Racing
+ * Designed by SNAP Web Designs (http://www.snapwebdesigns.co.nz)
+ */
+/*
+ * Body and Content
+ */
+body {
+  background-color: #000000;
+  color: #FEFEFE; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600; }
+
+a {
+  color: #FEFEFE; }
+  a:hover {
+    color: #f4b244; }
+
+hr {
+  border-bottom: 1px solid #DDDDDD;
+  padding-top: 5px; }
+
+header {
+  padding-top: 2em; }
+
+.brand {
+  margin-bottom: 10px;
+  padding: 0px; }
+  .brand img {
+    display: block;
+    max-width: 75%;
+    height: auto; }
+
+/*
+ * Navbar
+ */
+.navbar-dark .navbar-nav .nav-link {
+  color: #FEFEFE;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  margin: 0 5px; }
+  .navbar-dark .navbar-nav .nav-link:hover {
+    color: #f4b244; }
+.navbar-dark .navbar-nav .active > .nav-link {
+  color: #FFE50D; }
+
+.navbar-toggler {
+  color: #FEFEFE !important;
+  border: 2px solid #FEFEFE !important;
+  position: relative; }
+  .navbar-toggler:hover {
+    color: #f4b244 !important;
+    border: 2px solid #f4b244 !important; }
+
+.collapse.show {
+  padding-top: 1em; }
+
+.breadcrumb {
+  background-color: #000000; }
+  .breadcrumb a:hover {
+    color: #f4b244; }
+  .breadcrumb .breadcrumb-item {
+    color: #FEFEFE; }
+    .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+      content: "»"; }
+  .breadcrumb .active {
+    color: #FFE50D; }
+
+/* Footer Content Styling
+------------------------- */
+/*
+ * Footer
+ */
+.footer {
+  background-color: #222222;
+  padding-top: 30px;
+  font-size: 14px; }
+  .footer h4 {
+    font-size: 18px;
+    color: #FFE50D; }
+
+.footer-widget {
+  padding-left: 0; }
+  .footer-widget .footer-site {
+    list-style-type: none;
+    margin: 0;
+    padding: 15px; }
+    .footer-widget .footer-site li {
+      margin: 0 0 8px;
+      line-height: 15px;
+      padding-top: 5px;
+      padding-bottom: 5px; }
+      .footer-widget .footer-site li a {
+        color: #FEFEFE;
+        text-decoration: none; }
+        .footer-widget .footer-site li a:hover {
+          color: #f4b244; }
+  .footer-widget .footer-contact {
+    list-style-type: none;
+    margin: 0;
+    padding: 15px; }
+    .footer-widget .footer-contact li {
+      position: relative;
+      display: block;
+      margin: 0 0 8px;
+      padding: 0 0 0 25px;
+      line-height: 20px; }
+      .footer-widget .footer-contact li i {
+        line-height: 20px;
+        color: #F19E14;
+        padding-right: 15px; }
+  .footer-widget .footer-social {
+    margin: 0;
+    padding: 15px; }
+    .footer-widget .footer-social li {
+      display: inline;
+      list-style: none;
+      padding-left: 10px;
+      padding-right: 10px; }
+      .footer-widget .footer-social li a {
+        text-decoration: none;
+        color: #555555; }
+        .footer-widget .footer-social li a:hover {
+          color: #f4b244; }
+        .footer-widget .footer-social li a .fa-icons {
+          color: #FEFEFE; }
+
+.footer-copyright {
+  color: #FEFEFE;
+  font-size: 12px;
+  padding: 20px 0; }
+  .footer-copyright a {
+    color: #FFE50D;
+    text-decoration: none; }
+    .footer-copyright a:hover {
+      color: #f4b244;
+      text-decoration: none; }
+  .footer-copyright p {
+    padding-right: 15px;
+    font-size: 11px;
+    color: #FEFEFE; }
+
+/*# sourceMappingURL=layout.css.map */

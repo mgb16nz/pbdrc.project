@@ -1,0 +1,235 @@
+/*!
+ * Pegasus Bay Drag Racing Club v1.0.0 (http://www.pbdrc.com)
+ * Copyright 2017 Pegasus Bay Drag Racing
+ * Customized Theme Layout Styling
+ * Designed by SNAP Web Designs (http://www.snapwebdesigns.co.nz)
+ */
+
+// Custom theme
+@import "pbdrc-custom-theme";
+
+/*
+ * Body and Content
+ */
+body {
+  background-color: $black-base-primary;
+  color: $theme-color-primary;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+}
+
+a {
+  color: $theme-color-primary;
+
+  &:hover {
+    color: lighten($theme-color--secondary-2, 10%);
+  }
+}
+
+hr {
+  border-bottom: 1px solid $white-gray-base;
+  padding-top: 5px;
+}
+
+header {
+  padding-top: 2em;
+}
+
+.brand {
+  margin-bottom: 10px;
+  padding: 0px;
+
+  img {
+    display: block;
+    max-width: 75%;
+    height: auto;
+  }
+}
+
+/*
+ * Navbar
+ */
+.navbar-dark {
+
+  .navbar-nav {
+
+    .nav-link {
+      color: $theme-color-primary;
+      text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+      margin: 0 5px;
+
+      &:hover {
+        color: lighten($theme-color--secondary-2, 10%);
+      }
+    }
+
+    .active {
+
+      &> .nav-link {
+        color: $theme-color--secondary-1;
+      }
+    }
+  }
+}
+
+// mobile dropdown bar menu
+.navbar-toggler {
+  color: $theme-color-primary !important;
+  border: 2px solid $theme-color-primary !important;
+  position: relative;
+
+  //.show {
+  //  padding-top: 1em;
+  //}
+
+
+  &:hover {
+    color: lighten($theme-color--secondary-2, 10%) !important;
+    border: 2px solid lighten($theme-color--secondary-2, 10%) !important;
+  }
+}
+
+.collapse.show {
+    padding-top: 1em;
+}
+
+.breadcrumb {
+  background-color: $black-base-primary;
+
+  a:hover {
+    color: lighten($theme-color--secondary-2, 10%);
+  }
+
+  .breadcrumb-item {
+    color: $theme-color-primary;
+
+    // The separator between breadcrumbs (by default, a double-right-angle: "»")
+    + .breadcrumb-item::before {
+      content: "#{$theme-breadcrumb-divider}";
+    }
+  }
+
+  .active {
+    color: $theme-color--secondary-1;
+  }
+}
+
+/* Footer Content Styling
+------------------------- */
+/*
+ * Footer
+ */
+.footer {
+  background-color: $theme-background-color;
+  padding-top: 30px;
+  font-size: 14px;
+
+  h4 {
+    font-size: 18px;
+    color: $theme-color--secondary-1;
+  }
+}
+
+.footer-widget {
+  padding-left: 0;
+
+
+  .footer-site {
+    list-style-type: none;
+    margin: 0;
+    padding: 15px;
+
+    li {
+      margin: 0 0 8px;
+      line-height: 15px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+
+      a {
+        color: $white-base-primary;
+        text-decoration: none;
+
+        &:hover {
+          color: lighten($theme-color--secondary-2, 10%);
+        }
+      }
+    }
+  }
+
+  // footer contact
+  .footer-contact {
+    list-style-type: none;
+    margin: 0;
+    padding: 15px;
+
+    li {
+      position: relative;
+      display: block;
+      margin: 0 0 8px;
+      padding: 0 0 0 25px;
+      line-height: 20px;
+
+      i {
+        line-height: 20px;
+        color: $theme-color--secondary-2;
+        padding-right: 15px;
+      }
+    }
+  }
+
+  // footer social icons
+  .footer-social {
+    margin: 0;
+    padding: 15px;
+
+    li {
+      display: inline;
+      list-style: none;
+      padding-left: 10px;
+      padding-right: 10px;
+
+      a {
+        text-decoration: none;
+        color: $gray-base-primary;
+
+        &:hover {
+          color: lighten($theme-color--secondary-2, 10%);
+        }
+
+        .fa-icons {
+          color: $white-base-primary;
+        }
+      }
+    }
+  }
+}
+
+.footer-copyright {
+  color: $theme-color-primary;
+  font-size: 12px;
+  padding: 20px 0;
+
+  a {
+    color: $theme-color--secondary-1;
+    text-decoration: none;
+
+    &:hover {
+      color: lighten($theme-color--secondary-2, 10%);
+      text-decoration: none;
+    }
+  }
+
+  p {
+    padding-right: 15px;
+    font-size: 11px;
+    color: $theme-color-primary;
+  }
+}
+

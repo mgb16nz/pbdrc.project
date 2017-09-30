@@ -20,7 +20,8 @@
     <% include Navigation %>
     <% include BreadCrumbs %>
 
-    $Layout
+        $Layout
+        <%--<% include SideBar %>--%>
 
     <% include Footer %>
 

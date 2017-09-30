@@ -25,5 +25,20 @@ class Page_Controller extends ContentController
         parent::init();
         // You can include any CSS or JS required by your project here.
         // See: http://doc.silverstripe.org/framework/en/reference/requirements
+
+        // Requirements for CSS
+        Requirements::css("https://fonts.googleapis.com/css?family=Open+Sans|Lato|Roboto");
+        Requirements::css("{$this->ThemeDir()}/css/bootstrap.min.css");
+        Requirements::css("{$this->ThemeDir()}/css/layout.min.css");
+        Requirements::css("{$this->ThemeDir()}/css/font-awesome.min.css");
+
+        // Requirements for JS
+        Requirements::javascript("https://code.jquery.com/jquery-3.2.1.slim.min.js");
+        Requirements::javascript("{$this->ThemeDir()}/js/vendor/popper.min.js");
+        Requirements::javascript("{$this->ThemeDir()}/js/bootstrap.min.js");
+    }
+
+    public function PageByID($pageID = 0) {
+        return DataObject::get_by_id('SiteTree', $pageID);
     }
 }

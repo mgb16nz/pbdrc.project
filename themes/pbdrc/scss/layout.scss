@@ -38,6 +38,11 @@ hr {
   padding-top: 5px;
 }
 
+/* Header Styling
+------------------------- */
+/*
+ * Header
+ */
 header {
   padding-top: 2em;
 }
@@ -53,6 +58,8 @@ header {
   }
 }
 
+/* Navbar Styling
+------------------------- */
 /*
  * Navbar
  */
@@ -70,12 +77,20 @@ header {
       }
     }
 
-    .current {
+    .active {
 
       &> .nav-link {
         color: $theme-color--secondary-1;
       }
     }
+  }
+}
+
+// dropdown menu items
+.dropdown-item {
+
+  &:hover {
+    background-color: $theme-color--secondary-2;
   }
 }
 
@@ -85,11 +100,6 @@ header {
   border: 2px solid $theme-color-primary !important;
   position: relative;
 
-  //.show {
-  //  padding-top: 1em;
-  //}
-
-
   &:hover {
     color: lighten($theme-color--secondary-2, 10%) !important;
     border: 2px solid lighten($theme-color--secondary-2, 10%) !important;
@@ -97,9 +107,14 @@ header {
 }
 
 .collapse.show {
-    padding-top: 1em;
+    padding-top: 1em; // giving more space between menu and button
 }
 
+/* Breadcrumbs Styling
+------------------------- */
+/*
+ * Breadcrumbs
+ */
 .breadcrumb {
   background-color: $black-base-primary;
 
@@ -211,6 +226,7 @@ header {
   }
 }
 
+// footer copyright
 .footer-copyright {
   color: $theme-color-primary;
   font-size: 12px;
@@ -232,4 +248,6 @@ header {
     color: $theme-color-primary;
   }
 }
+
+
 

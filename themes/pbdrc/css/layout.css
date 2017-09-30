@@ -34,6 +34,11 @@ hr {
   border-bottom: 1px solid #DDDDDD;
   padding-top: 5px; }
 
+/* Header Styling
+------------------------- */
+/*
+ * Header
+ */
 header {
   padding-top: 2em; }
 
@@ -45,6 +50,8 @@ header {
     max-width: 75%;
     height: auto; }
 
+/* Navbar Styling
+------------------------- */
 /*
  * Navbar
  */
@@ -54,8 +61,11 @@ header {
   margin: 0 5px; }
   .navbar-dark .navbar-nav .nav-link:hover {
     color: #f4b244; }
-.navbar-dark .navbar-nav .current > .nav-link {
+.navbar-dark .navbar-nav .active > .nav-link {
   color: #FFE50D; }
+
+.dropdown-item:hover {
+  background-color: #F19E14; }
 
 .navbar-toggler {
   color: #FEFEFE !important;
@@ -68,6 +78,11 @@ header {
 .collapse.show {
   padding-top: 1em; }
 
+/* Breadcrumbs Styling
+------------------------- */
+/*
+ * Breadcrumbs
+ */
 .breadcrumb {
   background-color: #000000; }
   .breadcrumb a:hover {

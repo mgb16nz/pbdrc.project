@@ -23,13 +23,18 @@ h4,
 h5,
 h6 {
   font-weight: 600;
+  color: $theme-color-secondary-1;
+
+  small {
+    color: $theme-color-primary;
+  }
 }
 
 a {
   color: $theme-color-primary;
 
   &:hover {
-    color: lighten($theme-color--secondary-2, 10%);
+    color: lighten($theme-color-secondary-2, 10%);
   }
 }
 
@@ -73,14 +78,14 @@ header {
       margin: 0 5px;
 
       &:hover {
-        color: lighten($theme-color--secondary-2, 10%);
+        color: lighten($theme-color-secondary-2, 10%);
       }
     }
 
     .active {
 
       &> .nav-link {
-        color: $theme-color--secondary-1;
+        color: $theme-color-secondary-1;
       }
     }
   }
@@ -90,7 +95,7 @@ header {
 .dropdown-item {
 
   &:hover {
-    background-color: $theme-color--secondary-2;
+    background-color: $theme-color-secondary-2;
   }
 }
 
@@ -101,8 +106,8 @@ header {
   position: relative;
 
   &:hover {
-    color: lighten($theme-color--secondary-2, 10%) !important;
-    border: 2px solid lighten($theme-color--secondary-2, 10%) !important;
+    color: lighten($theme-color-secondary-2, 10%) !important;
+    border: 2px solid lighten($theme-color-secondary-2, 10%) !important;
   }
 }
 
@@ -119,7 +124,7 @@ header {
   background-color: $black-base-primary;
 
   a:hover {
-    color: lighten($theme-color--secondary-2, 10%);
+    color: lighten($theme-color-secondary-2, 10%);
   }
 
   .breadcrumb-item {
@@ -132,7 +137,7 @@ header {
   }
 
   .active {
-    color: $theme-color--secondary-1;
+    color: $theme-color-secondary-1;
   }
 }
 
@@ -148,7 +153,7 @@ header {
 
   h4 {
     font-size: 18px;
-    color: $theme-color--secondary-1;
+    color: $theme-color-secondary-1;
   }
 }
 
@@ -172,7 +177,7 @@ header {
         text-decoration: none;
 
         &:hover {
-          color: lighten($theme-color--secondary-2, 10%);
+          color: lighten($theme-color-secondary-2, 10%);
         }
       }
     }
@@ -193,7 +198,7 @@ header {
 
       i {
         line-height: 20px;
-        color: $theme-color--secondary-2;
+        color: $theme-color-secondary-2;
         padding-right: 15px;
       }
     }
@@ -215,7 +220,7 @@ header {
         color: $gray-base-primary;
 
         &:hover {
-          color: lighten($theme-color--secondary-2, 10%);
+          color: lighten($theme-color-secondary-2, 10%);
         }
 
         .fa-icons {
@@ -233,11 +238,11 @@ header {
   padding: 20px 0;
 
   a {
-    color: $theme-color--secondary-1;
+    color: $theme-color-secondary-1;
     text-decoration: none;
 
     &:hover {
-      color: lighten($theme-color--secondary-2, 10%);
+      color: lighten($theme-color-secondary-2, 10%);
       text-decoration: none;
     }
   }

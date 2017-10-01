@@ -62,7 +62,7 @@
 
             <div class="row">
 
-                <p class="footer-copyright">Copyright &copy; Company 2017 <a href="#" target="_blank">Pegasus Bay drag Racing Club</a>, All Rights Reserved</p>
+                <p class="footer-copyright">Copyright &copy; $Now.Year <a href="$AbsoluteBaseURL" target="_blank">$SiteConfig.Title</a>, All Rights Reserved</p>
 
             </div>
 

@@ -17,9 +17,9 @@
                 <div class="col-sm-4 footer-widget">
                     <h4>Contact Details</h4>
                     <ul class="footer-contact">
-                        <li><i class="fa fa-map-marker"></i><span> 123 Lorem ipsum dolor,<br> Consectetur adipisicing</span></li>
-                        <li><i class="fa fa-phone"></i><span> +64 12 34567890</span></li>
-                        <li><i class="fa fa-envelope"></i><span> Lorem@ipsum.com</span></li>
+                        <li><i class="fa fa-map-marker"></i><span>$SiteConfig.Address</span></li>
+                        <li><i class="fa fa-phone"></i><span>$SiteConfig.Mobile</span></li>
+                        <li><i class="fa fa-envelope"></i><span>$SiteConfig.Email</span></li>
                     </ul>
                 </div>
 

@@ -102,6 +102,32 @@ header {
   .breadcrumb .active {
     color: #FFE50D; }
 
+/* All Content Styling
+------------------------- */
+/*
+ * Home page notification
+ */
+.bulitin {
+  margin-bottom: 30px;
+  padding-bottom: 15px; }
+
+/*
+ * Card / Boxing
+ */
+.card {
+  border: 2px solid #FFD50D;
+  margin-bottom: 30px; }
+
+.card-header {
+  background-color: #FFD50D;
+  color: #000000;
+  text-align: center; }
+  .card-header h2 {
+    color: #000000; }
+
+.bg-theme {
+  background-color: #222222; }
+
 /* Footer Content Styling
 ------------------------- */
 /*

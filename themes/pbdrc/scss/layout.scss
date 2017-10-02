@@ -141,6 +141,39 @@ header {
   }
 }
 
+/* All Content Styling
+------------------------- */
+/*
+ * Home page notification
+ */
+.bulitin {
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+}
+
+/*
+ * Card / Boxing
+ */
+.card {
+  border: 2px solid $theme-boarder-color;
+  margin-bottom: 30px;
+}
+
+.card-header {
+  background-color: $theme-boarder-color;
+  color: $black-base-primary;
+  text-align: center;
+
+  h2 {
+    color: $black-base-primary;
+  }
+}
+.bg-theme {
+  background-color: $theme-background-color;
+}
+
+
+
 /* Footer Content Styling
 ------------------------- */
 /*

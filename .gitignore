@@ -27,4 +27,12 @@ npm-debug.log
 /cms
 /framework
 /siteconfig
-
+/reports
+/betterbuttons
+/googleanalytics
+/googlesitemaps
+/gridfield-bulk-editing-tools
+/gridfieldextensions
+/lumberjack
+/sortablegridfield
+/tagfield

@@ -1,5 +1,9 @@
 <!-- SIDEBAR - RIGHTSIDE -->
 <aside class="col-md-3">
-    <h2>Sidbar</h2>
-    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+    <div class="card bg-theme">
+        <div class="card-header"><h2>SPONSOR</h2></div>
+        <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+    </div>
 </aside>

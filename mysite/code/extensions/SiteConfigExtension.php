@@ -6,7 +6,8 @@
  * Created by SNAP Web Designs (http://www.snapwebdesigns.co.nz)
  */
 
-class SiteConfigExtension extends DataExtension {
+class SiteConfigExtension extends DataExtension
+{
 
     private static $db = array (
         'Address' => 'Varchar',
@@ -18,7 +19,8 @@ class SiteConfigExtension extends DataExtension {
         'LogoImage' => 'Image',
     );
 
-    public function updateCMSFields(FieldList $fields) {
+    public function updateCMSFields(FieldList $fields)
+    {
 
         // Settings Main
         $fields->addFieldsToTab('Root.Main', array (
@@ -40,6 +42,5 @@ class SiteConfigExtension extends DataExtension {
         $fields->removeByName('Tagline');
 
     }
-
 
 }

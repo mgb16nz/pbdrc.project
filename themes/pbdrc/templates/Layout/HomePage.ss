@@ -20,7 +20,7 @@
                 <img class="card-img" src="$PosterImage.URL" alt="$PosterAlt">
             </section>
 
-            <section class="card bg-theme">
+            <section class="card text-center bg-theme">
                 <div class="card-body">
                     <h2 class="card-title">$TitleHeader</h2>
                     $Content

@@ -9,8 +9,8 @@
 
                 <!-- Club info -->
                 <div class="col-sm-4 footer-widget">
-                    <h4>Club Info</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab autem culpa deleniti eius, ipsum magnam molestiae nesciunt nulla quas quasi, recusandae soluta ullam. Eligendi id illo, impedit quae sapiente voluptatibus!</p>
+                    <h4>Club Mission</h4>
+                    <p>$SiteConfig.CIText</p>
                 </div>
 
                 <!-- Contact Details -->
@@ -27,32 +27,46 @@
                 <div class="col-sm-4 footer-widget">
                     <h4>Follow Us</h4>
                     <ul class="footer-social">
+                        <% if $SiteConfig.FacebookLink %>
                         <li><!-- Facebook Icon -->
-                            <a href="#" title="follow me on FaceBook" alt="facebook" target="_blank">
+                            <a href="$SiteConfig.FacebookLink" title="$SiteConfig.FBTitle" alt="facebook" target="_blank">
                               <span class="fa-stack fa-lg">
                                 <i class="fa fa-square fa-stack-2x"></i>
                                 <i class="fa fa-facebook fa-icons fa-stack-1x"></i>
                               </span>
                             </a>
                         </li>
-
+                        <% end_if %>
+                        <% if $SiteConfig.TwitterLink %>
                         <li><!-- Twitter Icon -->
-                            <a href="#" title="follow me on Twitter" alt="twitter" target="_blank">
+                            <a href="$SiteConfig.TwitterLink" title="$SiteConfig.TTitle" alt="twitter" target="_blank">
                               <span class="fa-stack fa-lg">
                                 <i class="fa fa-square fa-stack-2x"></i>
                                 <i class="fa fa-twitter fa-icons fa-stack-1x"></i>
                               </span>
                             </a>
                         </li>
-
+                        <% end_if %>
+                        <% if $SiteConfig.YoutubeLink %>
                         <li><!-- YouTube Icon -->
-                            <a href="#" title="follow me on YouTube" alt="youtube" target="_blank">
+                            <a href="$SiteConfig.YoutubeLink" title="$SiteConfig.YTTitle" alt="youtube" target="_blank">
                               <span class="fa-stack fa-lg">
                                 <i class="fa fa-square fa-stack-2x"></i>
                                 <i class="fa fa-youtube fa-icons fa-stack-1x"></i>
                               </span>
                             </a>
                         </li>
+                        <% end_if %>
+                        <% if $SiteConfig.GooglePlusLink %>
+                            <li><!-- Goggle Plus Icon -->
+                                <a href="$SiteConfig.GooglePlusLink" title="$SiteConfig.GPTitle" alt="google-plus" target="_blank">
+                          <span class="fa-stack fa-lg">
+                            <i class="fa fa-square fa-stack-2x"></i>
+                            <i class="fa fa-google-plus fa-icons fa-stack-1x"></i>
+                          </span>
+                                </a>
+                            </li>
+                        <% end_if %>
                     </ul>
                 </div>
 

@@ -10,11 +10,9 @@ class SiteConfigExtension extends DataExtension
 {
 
     private static $db = array (
-
         'Address' => 'Varchar',
         'Mobile' => 'Varchar',
         'Email' => 'Varchar',
-
         // Social Media
         'FacebookLink' => 'Varchar',
         'TwitterLink' => 'Varchar',
@@ -23,13 +21,18 @@ class SiteConfigExtension extends DataExtension
         'TTitle' => 'Varchar',
         'YTTitle' => 'Varchar',
         'GPTitle' => 'Varchar',
-
         // Club Info
-        'CIText' => 'Text'
+        'CIText' => 'HTMLText',
+        // Call To Action
+        'CtaTitle' => 'VarChar',
+        'CtaText' => 'HTMLText',
+        'CtaLinkText' => 'VarChar'
     );
 
     private static $has_one = array (
         'LogoImage' => 'Image',
+        'CtaLink' => 'SiteTree',
+        'CtaImage' => 'Image',
     );
 
     public function updateCMSFields(FieldList $fields)
@@ -41,15 +44,15 @@ class SiteConfigExtension extends DataExtension
             TextField::create('Mobile','Your Contact Number'),
             TextField::create('Email','Your Email Address'),
             // Club Info text in the footer
-            TextareaField::create('CIText','Club Info Text in Footer'),
+            HTMLEditorField::create('CIText','Club Info Content for Footer'),
 
-            $uploader = UploadField::create('LogoImage','Choose a Image for your Logo'),
+            $logo = UploadField::create('LogoImage','Choose a Image for your Logo'),
 
         ));
 
         // Logo Image Uploader
-        $uploader->setFolderName('Uploads/Logo');
-        $uploader->getValidator()->setAllowedExtensions(array(
+        $logo->setFolderName('Uploads/Logo');
+        $logo->getValidator()->setAllowedExtensions(array(
             'png','gif','jpeg','jpg'
         ));
 
@@ -64,6 +67,23 @@ class SiteConfigExtension extends DataExtension
             TextField::create('GooglePlus','Goggle Plus Link'),
             TextField::create('GPTitle','Goggle Plus Title'),
         ));
+
+        // Call To Action
+        $fields->addFieldsToTab('Root.CallToAction', array (
+            TextField::create('CtaTitle','Header Title'),
+            TextField::create('CtaLinkText','Button Link Name'),
+            TreeDropdownField::create('CtaLinkID', 'Button Link Page', 'SiteTree', 'ID', 'TreeTitle'),
+            HTMLEditorField::create('CtaText','Content'),
+
+            $cta = UploadField::create('CtaImage','Background Image'),
+        ));
+
+        // Call To Action Image Uploader
+        $cta->setFolderName('Uploads/CTA');
+        $cta->getValidator()->setAllowedExtensions(array(
+            'png','gif','jpeg','jpg'
+        ));
+
 
         // Removes / Disables Theme from Settings
         $fields->removeByName('Theme');

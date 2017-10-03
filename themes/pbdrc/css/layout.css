@@ -42,6 +42,18 @@ hr {
   border-bottom: 1px solid #DDDDDD;
   padding-top: 5px; }
 
+.btn-theme {
+  color: #FFE50D;
+  background-image: none;
+  background-color: transparent;
+  border-color: #FFE50D;
+  font-size: 18px;
+  border: 2px solid; }
+  .btn-theme:hover {
+    color: #FEFEFE;
+    background-color: #F19E14;
+    border-color: #F19E14; }
+
 /* Header Styling
 ------------------------- */
 /*

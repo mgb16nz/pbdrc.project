@@ -43,6 +43,21 @@ hr {
   padding-top: 5px;
 }
 
+.btn-theme {
+  color: $theme-color-secondary-1;
+  background-image: none;
+  background-color: transparent;
+  border-color: $theme-color-secondary-1;
+  font-size: 18px;
+  border: 2px solid;
+
+  &:hover {
+    color: $theme-color-primary;
+    background-color: $theme-color-secondary-2;
+    border-color: $theme-color-secondary-2;
+  }
+}
+
 /* Header Styling
 ------------------------- */
 /*

@@ -1,4 +1,3 @@
-
 <% if $NoticeMessage %>
 <div class="container">
     <div class="row">
@@ -14,7 +13,7 @@
 <div class="container">
     <!-- Example row of columns -->
     <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-9">
 
             <section class="card bg-theme">
                 <img class="card-img" src="$PosterImage.URL" alt="$PosterAlt">
@@ -29,14 +28,7 @@
 
         </div>
 
-        <div class="col-md-4">
-            <section class="card bg-theme">
-                <div class="card-header"><h2>SPONSORS</h2></div>
-                <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-            </section>
-        </div>
+        <% include SideBar %>
 
     </div>
 

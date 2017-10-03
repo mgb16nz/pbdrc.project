@@ -31,11 +31,14 @@ class Page_Controller extends ContentController
         Requirements::css("{$this->ThemeDir()}/css/bootstrap.min.css");
         Requirements::css("{$this->ThemeDir()}/css/layout.min.css");
         Requirements::css("{$this->ThemeDir()}/css/contact-form.min.css");
+        Requirements::css("{$this->ThemeDir()}/css/parallax-scroll.min.css");
         Requirements::css("{$this->ThemeDir()}/css/font-awesome.min.css");
 
         // Requirements for JS
         Requirements::javascript("https://code.jquery.com/jquery-3.2.1.slim.min.js");
         Requirements::javascript("{$this->ThemeDir()}/js/vendor/popper.min.js");
+        Requirements::javascript("{$this->ThemeDir()}/js/bootstrap.min.js");
+        Requirements::javascript("{$this->ThemeDir()}/js/jquey.stellar.js");
         Requirements::javascript("{$this->ThemeDir()}/js/bootstrap.min.js");
     }
 

@@ -21,7 +21,8 @@
     <% include BreadCrumbs %>
 
         $Layout
-        <%--<% include SideBar %>--%>
+
+        <% include CTA %>
 
     <% include Footer %>
 

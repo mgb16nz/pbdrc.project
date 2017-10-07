@@ -15,7 +15,26 @@
  */
 body {
   background-color: #000000;
-  color: #FEFEFE; }
+  color: #FEFEFE;
+  font-size: 14px; }
+
+h1 {
+  font-size: 2rem; }
+
+h2 {
+  font-size: 1.5rem; }
+
+h3 {
+  font-size: 1.17rem; }
+
+h4 {
+  font-size: 1rem; }
+
+h5 {
+  font-size: 0.83rem; }
+
+h6 {
+  font-size: 0.67rem; }
 
 h1,
 h2,
@@ -41,6 +60,13 @@ a {
 hr {
   border-bottom: 1px solid #DDDDDD;
   padding-top: 5px; }
+
+.table thead th {
+  border-bottom: 0; }
+.table th {
+  border-top: 0; }
+.table td {
+  border-top: 0; }
 
 .btn-theme {
   color: #FFE50D;
@@ -105,14 +131,98 @@ header {
  */
 .breadcrumb {
   background-color: #000000; }
-  .breadcrumb a:hover {
-    color: #f4b244; }
   .breadcrumb .breadcrumb-item {
     color: #FEFEFE; }
     .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
       content: "»"; }
+  .breadcrumb a {
+    color: #FEFEFE; }
+    .breadcrumb a:hover {
+      color: #f4b244; }
   .breadcrumb .active {
     color: #FFE50D; }
+
+/* Footer Content Styling
+------------------------- */
+/*
+ * Footer
+ */
+.footer {
+  background-color: #222222;
+  padding-top: 30px; }
+  .footer h4 {
+    font-size: 18px;
+    color: #FFE50D; }
+
+.footer-content {
+  font-size: 12px;
+  text-align: center; }
+  .footer-content .footer-widget {
+    margin-top: 30px;
+    padding-left: 15px; }
+    .footer-content .footer-widget .footer-site {
+      list-style-type: none;
+      margin: 0;
+      padding: 15px; }
+      .footer-content .footer-widget .footer-site li {
+        margin: 0 0 8px;
+        line-height: 15px;
+        padding-top: 5px;
+        padding-bottom: 5px; }
+        .footer-content .footer-widget .footer-site li a {
+          color: #FEFEFE;
+          text-decoration: none; }
+          .footer-content .footer-widget .footer-site li a:hover {
+            color: #f4b244; }
+    .footer-content .footer-widget .footer-contact {
+      list-style-type: none;
+      margin: 0;
+      padding: 15px; }
+      .footer-content .footer-widget .footer-contact li {
+        position: relative;
+        display: block;
+        margin: 0 0 8px;
+        padding: 0 0 15px 5px;
+        line-height: 20px; }
+        .footer-content .footer-widget .footer-contact li i {
+          line-height: 20px;
+          color: #F19E14;
+          padding-right: 15px; }
+    .footer-content .footer-widget .footer-social {
+      margin: 0;
+      padding: 10px; }
+      .footer-content .footer-widget .footer-social li {
+        display: inline;
+        list-style: none;
+        padding-left: 10px;
+        padding-right: 10px; }
+        .footer-content .footer-widget .footer-social li a {
+          text-decoration: none;
+          color: #555555; }
+          .footer-content .footer-widget .footer-social li a:hover {
+            color: #f4b244; }
+          .footer-content .footer-widget .footer-social li a .fa-icons {
+            color: #FEFEFE; }
+
+#footer-copyright,
+#footer-right {
+  color: #FEFEFE;
+  font-size: 11px;
+  text-align: center;
+  padding: 0 15px; }
+  #footer-copyright a,
+  #footer-right a {
+    color: #FFE50D;
+    text-decoration: none; }
+    #footer-copyright a:hover,
+    #footer-right a:hover {
+      color: #f4b244;
+      text-decoration: none; }
+  #footer-copyright p,
+  #footer-right p {
+    padding-right: 15px;
+    font-size: 11px;
+    color: #FEFEFE; }
 
 /* All Content Styling
 ------------------------- */
@@ -134,84 +244,52 @@ header {
   background-color: #FFD50D;
   color: #000000;
   text-align: center; }
-  .card-header h2 {
+  .card-header h1,
+  .card-header h2,
+  .card-header h3,
+  .card-header h4 {
     color: #000000; }
 
 .bg-theme {
   background-color: #222222; }
 
-/* Footer Content Styling
-------------------------- */
 /*
- * Footer
+ * Contact page notification
  */
-.footer {
-  background-color: #222222;
-  padding-top: 30px;
-  font-size: 14px; }
-  .footer h4 {
-    font-size: 18px;
-    color: #FFE50D; }
+.contact {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 15px; }
+  .contact li {
+    position: relative;
+    display: block;
+    margin: 0 0 8px;
+    padding: 0 0 15px 5px;
+    line-height: 20px; }
+    .contact li i {
+      line-height: 20px;
+      color: #F19E14;
+      padding-right: 15px; }
 
-.footer-widget {
-  padding-left: 0; }
-  .footer-widget .footer-site {
-    list-style-type: none;
-    margin: 0;
-    padding: 15px; }
-    .footer-widget .footer-site li {
-      margin: 0 0 8px;
-      line-height: 15px;
-      padding-top: 5px;
-      padding-bottom: 5px; }
-      .footer-widget .footer-site li a {
-        color: #FEFEFE;
-        text-decoration: none; }
-        .footer-widget .footer-site li a:hover {
-          color: #f4b244; }
-  .footer-widget .footer-contact {
-    list-style-type: none;
-    margin: 0;
-    padding: 15px; }
-    .footer-widget .footer-contact li {
-      position: relative;
-      display: block;
-      margin: 0 0 8px;
-      padding: 0 0 0 25px;
-      line-height: 20px; }
-      .footer-widget .footer-contact li i {
-        line-height: 20px;
-        color: #F19E14;
-        padding-right: 15px; }
-  .footer-widget .footer-social {
-    margin: 0;
-    padding: 15px; }
-    .footer-widget .footer-social li {
-      display: inline;
-      list-style: none;
-      padding-left: 10px;
-      padding-right: 10px; }
-      .footer-widget .footer-social li a {
-        text-decoration: none;
-        color: #555555; }
-        .footer-widget .footer-social li a:hover {
-          color: #f4b244; }
-        .footer-widget .footer-social li a .fa-icons {
-          color: #FEFEFE; }
+/* For Lager Devices
+------------------------- */
+@media (min-width: 768px) {
+  .navbar-nav {
+    font-size: 18px; }
 
-.footer-copyright {
-  color: #FEFEFE;
-  font-size: 12px;
-  padding: 20px 0; }
-  .footer-copyright a {
-    color: #FFE50D;
-    text-decoration: none; }
-    .footer-copyright a:hover {
-      color: #f4b244;
-      text-decoration: none; }
-  .footer-copyright p {
-    padding-right: 15px;
-    font-size: 11px;
-    color: #FEFEFE; }
+  .footer-content {
+    font-size: 14px;
+    text-align: left; }
+    .footer-content .footer-widget {
+      margin-top: 0;
+      padding-left: 15px; }
+      .footer-content .footer-widget .footer-social {
+        text-align: left; }
+
+  #footer-copyright {
+    text-align: left; }
+
+  #footer-right {
+    text-align: right; } }
 
 /*# sourceMappingURL=layout.css.map */

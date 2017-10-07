@@ -1,6 +1,4 @@
-<!-- Call To Action -->
-<% if $ClassName!='ContactPage' %>
-
+    <!-- Call To Action -->
     <div class="container-fluid">
         <section class="parallax fixed-images" style="background-image: url($SiteConfig.CtaImage.URL)">
 
@@ -19,6 +17,3 @@
         </section>
     </div>
 
-<% else %>
-
-<% end_if %>

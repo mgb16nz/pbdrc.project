@@ -3,4 +3,8 @@
  * Copyright 2017 Pegasus Bay Drag Racing
  * Customized Paralax Scrolling Styling
  * Designed by SNAP Web Designs (http://www.snapwebdesigns.co.nz)
- */.parallax{background-repeat:no-repeat;background-position:center;background-size:cover}.parallax-content{height:300px;clear:both;text-align:center;color:#fefefe;padding-top:5em;padding-bottom:5.5em}.parallax-content p{color:#fefefe;font-size:16px;padding:0 30px}.fixed-images{background-attachment:scroll}@media(min-width:1080px){.parallax{background-attachment:fixed}}
+ *//*!
+ * Pegasus Bay Drag Racing Club v1.0.0 (http://www.pbdrc.com)
+ * Copyright 2017 Pegasus Bay Drag Racing
+ * Designed by SNAP Web Designs (http://www.snapwebdesigns.co.nz)
+ */.parallax{height:380px;background-repeat:no-repeat;background-position:center;background-size:cover}.parallax-content{clear:both;text-align:center;color:#fefefe;padding-top:3em}.parallax-content p{color:#fefefe;font-size:16px;padding:0 30px}.fixed-images{background-attachment:scroll}@media(min-width:1080px){.parallax{background-attachment:fixed}}@media(min-width:992px){.parallax-content{height:300px;padding-top:8em}}

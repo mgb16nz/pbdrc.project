@@ -14,7 +14,15 @@
 body {
   background-color: $black-base-primary;
   color: $theme-color-primary;
+  font-size: $theme-font-base;
 }
+
+h1  { font-size: $theme-h1-font-size; }
+h2  { font-size: $theme-h2-font-size; }
+h3  { font-size: $theme-h3-font-size; }
+h4  { font-size: $theme-h4-font-size; }
+h5  { font-size: $theme-h5-font-size; }
+h6  { font-size: $theme-h6-font-size; }
 
 h1,
 h2,
@@ -41,6 +49,24 @@ a {
 hr {
   border-bottom: 1px solid $white-gray-base;
   padding-top: 5px;
+}
+
+.table {
+
+  thead {
+
+    th {
+      border-bottom: 0;
+    }
+  }
+
+  th {
+    border-top: 0;
+  }
+
+  td {
+    border-top: 0;
+  }
 }
 
 .btn-theme {
@@ -138,10 +164,6 @@ header {
 .breadcrumb {
   background-color: $black-base-primary;
 
-  a:hover {
-    color: lighten($theme-color-secondary-2, 10%);
-  }
-
   .breadcrumb-item {
     color: $theme-color-primary;
 
@@ -151,8 +173,136 @@ header {
     }
   }
 
+  a{
+    color: $theme-color-primary;
+
+    &:hover {
+      color: lighten($theme-color-secondary-2, 10%);
+    }
+  }
+
   .active {
     color: $theme-color-secondary-1;
+  }
+}
+
+/* Footer Content Styling
+------------------------- */
+/*
+ * Footer
+ */
+.footer {
+  background-color: $theme-background-color;
+  padding-top: 30px;
+
+  h4 {
+    font-size: 18px;
+    color: $theme-color-secondary-1;
+  }
+}
+
+.footer-content {
+
+  font-size: ceil(($theme-font-base - 2));
+  text-align: center;
+
+  .footer-widget {
+    margin-top: 30px;
+    padding-left: 15px;
+
+    .footer-site {
+      list-style-type: none;
+      margin: 0;
+      padding: 15px;
+
+      li {
+        margin: 0 0 8px;
+        line-height: 15px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+
+        a {
+          color: $white-base-primary;
+          text-decoration: none;
+
+          &:hover {
+            color: lighten($theme-color-secondary-2, 10%);
+          }
+        }
+      }
+    }
+
+    // footer contact
+    .footer-contact {
+      list-style-type: none;
+      margin: 0;
+      padding: 15px;
+
+      li {
+        position: relative;
+        display: block;
+        margin: 0 0 8px;
+        padding: 0 0 15px 5px;
+        line-height: 20px;
+
+        i {
+          line-height: 20px;
+          color: $theme-color-secondary-2;
+          padding-right: 15px;
+        }
+      }
+    }
+
+    // footer social icons
+    .footer-social {
+      margin: 0;
+      padding: 10px;
+
+      li {
+        display: inline;
+        list-style: none;
+        padding-left: 10px;
+        padding-right: 10px;
+
+        a {
+          text-decoration: none;
+          color: $gray-base-primary;
+
+          &:hover {
+            color: lighten($theme-color-secondary-2, 10%);
+          }
+
+          .fa-icons {
+            color: $white-base-primary;
+          }
+        }
+      }
+    }
+  }
+}
+
+// footer copyright
+#footer-copyright,
+#footer-right {
+  color: $theme-color-primary;
+  font-size: 11px;
+  text-align: center;
+  padding: 0 15px;
+
+  a {
+    color: $theme-color-secondary-1;
+    text-decoration: none;
+
+    &:hover {
+      color: lighten($theme-color-secondary-2, 10%);
+      text-decoration: none;
+    }
+  }
+
+  p {
+    padding-right: 15px;
+    font-size: 11px;
+    color: $theme-color-primary;
   }
 }
 
@@ -179,7 +329,10 @@ header {
   color: $black-base-primary;
   text-align: center;
 
-  h2 {
+  h1,
+  h2,
+  h3,
+  h4 {
     color: $black-base-primary;
   }
 }
@@ -187,119 +340,64 @@ header {
   background-color: $theme-background-color;
 }
 
-
-
-/* Footer Content Styling
-------------------------- */
 /*
- * Footer
+ * Contact page notification
  */
-.footer {
-  background-color: $theme-background-color;
-  padding-top: 30px;
-  font-size: 14px;
+.contact {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 15px;
 
-  h4 {
-    font-size: 18px;
-    color: $theme-color-secondary-1;
-  }
-}
+  li {
+    position: relative;
+    display: block;
+    margin: 0 0 8px;
+    padding: 0 0 15px 5px;
+    line-height: 20px;
 
-.footer-widget {
-  padding-left: 0;
-
-
-  .footer-site {
-    list-style-type: none;
-    margin: 0;
-    padding: 15px;
-
-    li {
-      margin: 0 0 8px;
-      line-height: 15px;
-      padding-top: 5px;
-      padding-bottom: 5px;
-
-      a {
-        color: $white-base-primary;
-        text-decoration: none;
-
-        &:hover {
-          color: lighten($theme-color-secondary-2, 10%);
-        }
-      }
-    }
-  }
-
-  // footer contact
-  .footer-contact {
-    list-style-type: none;
-    margin: 0;
-    padding: 15px;
-
-    li {
-      position: relative;
-      display: block;
-      margin: 0 0 8px;
-      padding: 0 0 0 25px;
+    i {
       line-height: 20px;
-
-      i {
-        line-height: 20px;
-        color: $theme-color-secondary-2;
-        padding-right: 15px;
-      }
-    }
-  }
-
-  // footer social icons
-  .footer-social {
-    margin: 0;
-    padding: 15px;
-
-    li {
-      display: inline;
-      list-style: none;
-      padding-left: 10px;
-      padding-right: 10px;
-
-      a {
-        text-decoration: none;
-        color: $gray-base-primary;
-
-        &:hover {
-          color: lighten($theme-color-secondary-2, 10%);
-        }
-
-        .fa-icons {
-          color: $white-base-primary;
-        }
-      }
+      color: $theme-color-secondary-2;
+      padding-right: 15px;
     }
   }
 }
 
-// footer copyright
-.footer-copyright {
-  color: $theme-color-primary;
-  font-size: 12px;
-  padding: 20px 0;
 
-  a {
-    color: $theme-color-secondary-1;
-    text-decoration: none;
+/* For Lager Devices
+------------------------- */
 
-    &:hover {
-      color: lighten($theme-color-secondary-2, 10%);
-      text-decoration: none;
+// Large devices (desktops, 768px and up)
+@media (min-width: 768px) {
+
+  .navbar-nav {
+    font-size: ceil(($theme-font-base +4));
+  }
+
+  .footer-content {
+    font-size: $theme-font-base;
+    text-align: left;
+
+    .footer-widget {
+      margin-top: 0;
+      padding-left: 15px;
+
+      .footer-social {
+        text-align: left;
+      }
+
     }
   }
 
-  p {
-    padding-right: 15px;
-    font-size: 11px;
-    color: $theme-color-primary;
+  #footer-copyright {
+    text-align: left;
   }
+
+  #footer-right {
+    text-align: right;
+  }
+
+
 }
 
 

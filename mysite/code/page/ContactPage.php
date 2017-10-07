@@ -8,5 +8,22 @@
 
 class ContactPage extends Page
 {
+    private static $db = array(
+        'Latitude' => 'Varchar',
+        'Longitude' => 'Varchar',
+    );
+
+    public function getCMSFields() {
+        $fields = parent::getCMSFields();
+
+        $fields->addFieldsToTab('Root.Location', array(
+            HiddenField::create('Latitude'),
+            HiddenField::create('Longitude'),
+            GoogleMapField::create($this, 'Location')->setRightTitle('Search for an address or place the marker in desired position.'),
+
+        ));
+
+        return $fields;
+    }
 
 }

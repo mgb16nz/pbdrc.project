@@ -40,12 +40,4 @@
         </div>
     </nav>
 
-    <%--<!-- about dropdown menu -->--%>
-    <%--<li class="nav-item dropdown">--%>
-    <%--<a class="nav-item nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Us</a>--%>
-    <%--<div class="dropdown-menu" aria-labelledby="dropdown01">--%>
-    <%--<a class="dropdown-item" href="#">The Club</a>--%>
-    <%--<a class="dropdown-item" href="#">The Committee</a>--%>
-    <%--<a class="dropdown-item" href="#">The History</a>--%>
-    <%--</div>--%>
-    <%--</li>--%>
+

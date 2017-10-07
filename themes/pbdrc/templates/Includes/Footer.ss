@@ -3,18 +3,20 @@
 
     <footer class="footer">
 
-        <div class="container">
+        <div class="container footer-content">
             <div class="row">
 
                 <!-- Club info -->
                 <div class="col-sm-4 footer-widget">
                     <h4>Club Mission</h4>
+                    <hr>
                     <p>$SiteConfig.CIText</p>
                 </div>
 
                 <!-- Contact Details -->
                 <div class="col-sm-4 footer-widget">
                     <h4>Contact Details</h4>
+                    <hr>
                     <ul class="footer-contact">
                         <li><i class="fa fa-map-marker"></i><span>$SiteConfig.Address</span></li>
                         <li><i class="fa fa-phone"></i><span>$SiteConfig.Mobile</span></li>
@@ -25,6 +27,7 @@
                 <!-- Social Media -->
                 <div class="col-sm-4 footer-widget">
                     <h4>Follow Us</h4>
+                    <hr>
                     <ul class="footer-social">
                         <% if $SiteConfig.FacebookLink %>
                         <li><!-- Facebook Icon -->
@@ -75,7 +78,8 @@
 
             <div class="row">
 
-                <p class="footer-copyright">Copyright &copy; $Now.Year <a href="$AbsoluteBaseURL" target="_blank">$SiteConfig.Title</a>, All Rights Reserved</p>
+                <p id="footer-copyright" class="col-sm-6 col-md-6 col-xs-12">Copyright &copy; $Now.Year <a href="$AbsoluteBaseURL" target="_blank">$SiteConfig.Title</a>, All Rights Reserved</p>
+                <p id="footer-right" class="col-sm-6 col-md-6 col-xs-12">Developed By<a href="http://www.snapwebdesigns.co.nz/" target="_blank"> SNAP Web Designs</a></p>
 
             </div>
 

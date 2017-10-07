@@ -14,3 +14,8 @@ SSViewer:
 SiteConfig:
   extensions:
     - SiteConfigExtension
+
+# GoogleMapField
+GoogleMapField:
+  default_options:
+    api_key: AIzaSyANE7wlfv9Vo17LyngDxPAQrEswJJDzwVg

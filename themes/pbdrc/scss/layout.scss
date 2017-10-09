@@ -69,6 +69,16 @@ hr {
   }
 }
 
+.media {
+  //margin: 70px 0 0 auto;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+.media-body {
+  margin: auto;
+}
+
 .btn-theme {
   color: $theme-color-secondary-1;
   background-image: none;
@@ -94,13 +104,19 @@ header {
 }
 
 .brand {
-  margin-bottom: 10px;
-  padding: 0px;
 
   img {
     display: block;
-    max-width: 75%;
+    max-width: 90%;
     height: auto;
+    margin-left: 25px;
+  }
+}
+
+.header-sponsor {
+
+  img {
+    margin-left: 15px;
   }
 }
 
@@ -250,6 +266,14 @@ header {
           color: $theme-color-secondary-2;
           padding-right: 15px;
         }
+
+        a {
+          color: $theme-color-primary;
+
+          &:hover {
+            color: $theme-color-secondary-2;
+          }
+        }
       }
     }
 
@@ -363,7 +387,6 @@ header {
   }
 }
 
-
 /* For Lager Devices
 ------------------------- */
 
@@ -372,6 +395,36 @@ header {
 
   .navbar-nav {
     font-size: ceil(($theme-font-base +4));
+  }
+
+  .brand {
+    margin-bottom: 10px;
+    padding: 0;
+
+    img {
+      max-width: 90%;
+      height: auto;
+      margin-left: 0;
+    }
+  }
+
+  .header-sponsor {
+
+    img {
+      height: auto;
+      width: 180px;
+      margin-top: 30px;
+      margin-left: 15px;
+    }
+  }
+
+  .media-body {
+    padding-top: 65px;
+  }
+
+  .media {
+    margin: 70px 0 0 auto;
+    //padding-bottom: 15px;
   }
 
   .footer-content {

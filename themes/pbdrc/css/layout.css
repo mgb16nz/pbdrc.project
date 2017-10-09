@@ -68,6 +68,13 @@ hr {
 .table td {
   border-top: 0; }
 
+.media {
+  padding-bottom: 15px;
+  padding-top: 15px; }
+
+.media-body {
+  margin: auto; }
+
 .btn-theme {
   color: #FFE50D;
   background-image: none;
@@ -88,13 +95,14 @@ hr {
 header {
   padding-top: 2em; }
 
-.brand {
-  margin-bottom: 10px;
-  padding: 0px; }
-  .brand img {
-    display: block;
-    max-width: 75%;
-    height: auto; }
+.brand img {
+  display: block;
+  max-width: 90%;
+  height: auto;
+  margin-left: 25px; }
+
+.header-sponsor img {
+  margin-left: 15px; }
 
 /* Navbar Styling
 ------------------------- */
@@ -188,6 +196,10 @@ header {
           line-height: 20px;
           color: #F19E14;
           padding-right: 15px; }
+        .footer-content .footer-widget .footer-contact li a {
+          color: #FEFEFE; }
+          .footer-content .footer-widget .footer-contact li a:hover {
+            color: #F19E14; }
     .footer-content .footer-widget .footer-social {
       margin: 0;
       padding: 10px; }
@@ -276,6 +288,26 @@ header {
 @media (min-width: 768px) {
   .navbar-nav {
     font-size: 18px; }
+
+  .brand {
+    margin-bottom: 10px;
+    padding: 0; }
+    .brand img {
+      max-width: 90%;
+      height: auto;
+      margin-left: 0; }
+
+  .header-sponsor img {
+    height: auto;
+    width: 180px;
+    margin-top: 30px;
+    margin-left: 15px; }
+
+  .media-body {
+    padding-top: 65px; }
+
+  .media {
+    margin: 70px 0 0 auto; }
 
   .footer-content {
     font-size: 14px;

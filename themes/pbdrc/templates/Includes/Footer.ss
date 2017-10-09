@@ -20,15 +20,25 @@
                     <ul class="footer-contact">
                         <li><i class="fa fa-map-marker"></i><span>$SiteConfig.Address</span></li>
                         <li><i class="fa fa-phone"></i><span>$SiteConfig.Mobile</span></li>
-                        <li><i class="fa fa-envelope"></i><span>$SiteConfig.Email</span></li>
+                        <li><i class="fa fa-envelope"></i><span><a href="mailto:$SiteConfig.Email">$SiteConfig.Email</a></span></li>
                     </ul>
                 </div>
 
                 <!-- Social Media -->
                 <div class="col-sm-4 footer-widget">
-                    <h4>Follow Us</h4>
+                    <h4>Get In Touch</h4>
                     <hr>
                     <ul class="footer-social">
+                        <% if $SiteConfig.FacebookLink %>
+                            <li><!-- Facebook Icon -->
+                                <a href="mailto:$SiteConfig.Email" title="E-mail us today" alt="email" target="_blank">
+                              <span class="fa-stack fa-2x">
+                                <i class="fa fa-square fa-stack-2x"></i>
+                                <i class="fa fa-envelope fa-icons fa-stack-1x"></i>
+                              </span>
+                                </a>
+                            </li>
+                        <% end_if %>
                         <% if $SiteConfig.FacebookLink %>
                         <li><!-- Facebook Icon -->
                             <a href="$SiteConfig.FacebookLink" title="$SiteConfig.FBTitle" alt="facebook" target="_blank">

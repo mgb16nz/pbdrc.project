@@ -157,7 +157,8 @@ header {
  */
 .footer {
   background-color: #222222;
-  padding-top: 30px; }
+  padding: 30px 15px;
+  font-size: 12px; }
   .footer h4 {
     font-size: 18px;
     color: #FFE50D; }
@@ -168,53 +169,59 @@ header {
   .footer-content .footer-widget {
     margin-top: 30px;
     padding-left: 15px; }
-    .footer-content .footer-widget .footer-site {
-      list-style-type: none;
-      margin: 0;
-      padding: 15px; }
-      .footer-content .footer-widget .footer-site li {
-        margin: 0 0 8px;
-        line-height: 15px;
-        padding-top: 5px;
-        padding-bottom: 5px; }
-        .footer-content .footer-widget .footer-site li a {
-          color: #FEFEFE;
-          text-decoration: none; }
-          .footer-content .footer-widget .footer-site li a:hover {
-            color: #f4b244; }
-    .footer-content .footer-widget .footer-contact {
-      list-style-type: none;
-      margin: 0;
-      padding: 15px; }
-      .footer-content .footer-widget .footer-contact li {
-        position: relative;
-        display: block;
-        margin: 0 0 8px;
-        padding: 0 0 15px 5px;
-        line-height: 20px; }
-        .footer-content .footer-widget .footer-contact li i {
-          line-height: 20px;
-          color: #F19E14;
-          padding-right: 15px; }
-        .footer-content .footer-widget .footer-contact li a {
-          color: #FEFEFE; }
-          .footer-content .footer-widget .footer-contact li a:hover {
-            color: #F19E14; }
-    .footer-content .footer-widget .footer-social {
-      margin: 0;
-      padding: 10px; }
-      .footer-content .footer-widget .footer-social li {
-        display: inline;
-        list-style: none;
-        padding-left: 10px;
-        padding-right: 10px; }
-        .footer-content .footer-widget .footer-social li a {
-          text-decoration: none;
-          color: #555555; }
-          .footer-content .footer-widget .footer-social li a:hover {
-            color: #f4b244; }
-          .footer-content .footer-widget .footer-social li a .fa-icons {
-            color: #FEFEFE; }
+
+.footer-site {
+  list-style-type: none;
+  margin: 0;
+  padding: 15px; }
+  .footer-site li {
+    margin: 0 0 8px;
+    line-height: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px; }
+    .footer-site li a {
+      color: #FEFEFE;
+      text-decoration: none; }
+      .footer-site li a:hover {
+        color: #f4b244; }
+
+.footer-contact {
+  list-style-type: none;
+  margin: 0;
+  padding: 15px; }
+  .footer-contact li {
+    position: relative;
+    display: block;
+    padding-left: 5px;
+    line-height: 20px; }
+    .footer-contact li i {
+      line-height: 20px;
+      color: #F19E14;
+      font-size: 18px; }
+    .footer-contact li p {
+      display: inline-block;
+      vertical-align: top;
+      padding-left: 15px; }
+    .footer-contact li a {
+      color: #FEFEFE; }
+      .footer-contact li a:hover {
+        color: #F19E14; }
+
+.footer-social {
+  margin: 0;
+  padding: 10px; }
+  .footer-social li {
+    display: inline;
+    list-style: none;
+    padding-left: 10px;
+    padding-right: 10px; }
+    .footer-social li a {
+      text-decoration: none;
+      color: #555555; }
+      .footer-social li a:hover {
+        color: #f4b244; }
+      .footer-social li a .fa-icons {
+        color: #FEFEFE; }
 
 #footer-copyright,
 #footer-right {
@@ -271,21 +278,31 @@ header {
 .contact {
   list-style-type: none;
   margin: 0;
-  padding: 0 15px; }
+  padding: 0 15px;
+  font-size: 12px; }
   .contact li {
     position: relative;
     display: block;
-    margin: 0 0 8px;
     padding: 0 0 15px 5px;
     line-height: 20px; }
     .contact li i {
       line-height: 20px;
-      color: #F19E14;
-      padding-right: 15px; }
+      color: #F19E14; }
+    .contact li p {
+      display: inline-block;
+      vertical-align: top;
+      padding-left: 15px; }
+    .contact li a {
+      color: #FEFEFE; }
+      .contact li a:hover {
+        color: #F19E14; }
 
 /* For Lager Devices
 ------------------------- */
 @media (min-width: 768px) {
+  /*
+  * Navigation and Brand / Logo Section
+  */
   .navbar-nav {
     font-size: 18px; }
 
@@ -297,18 +314,27 @@ header {
       height: auto;
       margin-left: 0; }
 
+  /*
+  * Header Area
+  */
   .header-sponsor img {
     height: auto;
     width: 180px;
     margin-top: 30px;
     margin-left: 15px; }
 
+  /*
+  * Content Area
+  */
   .media-body {
     padding-top: 65px; }
 
   .media {
     margin: 70px 0 0 auto; }
 
+  /*
+  * Footer Section
+  */
   .footer-content {
     font-size: 14px;
     text-align: left; }
@@ -318,10 +344,19 @@ header {
       .footer-content .footer-widget .footer-social {
         text-align: left; }
 
+  /*
+  * Footer Copyright
+  */
   #footer-copyright {
     text-align: left; }
 
   #footer-right {
-    text-align: right; } }
+    text-align: right; }
+
+  /*
+  * Contact page notification
+  */
+  .contact {
+    font-size: inherit; } }
 
 /*# sourceMappingURL=layout.css.map */

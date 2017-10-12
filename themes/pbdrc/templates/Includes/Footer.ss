@@ -18,9 +18,9 @@
                     <h4>Contact Details</h4>
                     <hr>
                     <ul class="footer-contact">
-                        <li><i class="fa fa-map-marker"></i><span>$SiteConfig.Address</span></li>
-                        <li><i class="fa fa-phone"></i><span>$SiteConfig.Mobile</span></li>
-                        <li><i class="fa fa-envelope"></i><span><a href="mailto:$SiteConfig.Email">$SiteConfig.Email</a></span></li>
+                        <li><i class="fa fa-map-marker"></i><p><span>$SiteConfig.Address<br>$SiteConfig.Suburb<br>$SiteConfig.City</span></p></li>
+                        <li><i class="fa fa-phone"></i><p><span>$SiteConfig.Mobile</span></p></li>
+                        <li><i class="fa fa-envelope"></i><p><span><a href="mailto:$SiteConfig.Email">$SiteConfig.Email</a></span></p></li>
                     </ul>
                 </div>
 

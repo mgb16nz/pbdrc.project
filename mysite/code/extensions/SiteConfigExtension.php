@@ -10,7 +10,10 @@ class SiteConfigExtension extends DataExtension
 {
 
     private static $db = array (
+        // Contact Details
         'Address' => 'Varchar',
+        'Suburb' => 'Varchar',
+        'City' => 'Varchar',
         'Mobile' => 'Varchar',
         'Email' => 'Varchar',
         // Social Media
@@ -40,9 +43,11 @@ class SiteConfigExtension extends DataExtension
 
         // Settings Main
         $fields->addFieldsToTab('Root.Main', array (
-            TextField::create('Address','Your Address Detail'),
-            TextField::create('Mobile','Your Contact Number'),
-            TextField::create('Email','Your Email Address'),
+            TextField::create('Address','Address'),
+            TextField::create('Suburb','Suburb'),
+            TextField::create('City','City or Town'),
+            TextField::create('Mobile','Contact Number'),
+            TextField::create('Email','Email Address'),
             // Club Info text in the footer
             HTMLEditorField::create('CIText','Club Info Content for Footer'),
 

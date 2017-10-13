@@ -9,7 +9,7 @@
     <title><% if $MetaTitle %>$MetaTitle<% else %>$Title<% end_if %></title>
 
     <!-- GoogleAnalytics -->
-    $GoogleAnalytics
+    <%--$GoogleAnalytics--%>
     <!-- End of GoogleAnalytics -->
 
 </head>

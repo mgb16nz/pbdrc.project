@@ -45,4 +45,10 @@ class Page_Controller extends ContentController
     public function PageByID($pageID = 0) {
         return DataObject::get_by_id('SiteTree', $pageID);
     }
+
+    // Get DataObject from the Advert model from the SideBarPage and passing it onto the SideBar Template
+    public function GetSidebar() {
+        if($Advert = DataObject::get('Advert'))
+            return $Advert;
+    }
 }

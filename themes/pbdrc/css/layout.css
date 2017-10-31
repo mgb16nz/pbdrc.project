@@ -150,6 +150,14 @@ header {
   .breadcrumb .active {
     color: #FFE50D; }
 
+/* SideBar Advert Styling
+------------------------- */
+/*
+ * SideBar Advert
+ */
+.advert-imgs {
+  padding-bottom: 1.25rem; }
+
 /* Footer Content Styling
 ------------------------- */
 /*

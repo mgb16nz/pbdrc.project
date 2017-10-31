@@ -32,7 +32,8 @@ class Advert extends DataObject {
         $fields->addFieldsToTab('Root.Main', array(
             TextField::create('AdvertTitle','Title'),
             TextField::create('AdvertAlt','Advert Image Title'),
-            TextField::create('AdvertURL','Advert Website URL'),
+            TextField::create('AdvertURL','Advert Website URL')
+                ->setDescription('example: http://www.site.com  NOT www.site.com'),
             CheckboxField::create('Active','Advert Active')
         ));
 

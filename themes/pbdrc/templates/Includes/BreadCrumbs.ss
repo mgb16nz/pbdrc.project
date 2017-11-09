@@ -7,7 +7,7 @@
             <% else %>
                 <a class="breadcrumb-item" href="$Link">$MenuTitle
                     <% if $IsNotHome %>
-                        <a class="breadcrumb-item" href="/">Home</a>
+                        <a class="breadcrumb-item" href="$URL">Home</a>
                     <% end_if %>
             <% end_if %>
 

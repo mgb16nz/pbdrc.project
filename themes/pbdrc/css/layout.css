@@ -68,11 +68,11 @@ hr {
 .table td {
   border-top: 0; }
 
-.media {
+.sponsor-media {
   padding-bottom: 15px;
   padding-top: 15px; }
 
-.media-body {
+.sponsor-body {
   margin: auto; }
 
 .btn-theme {
@@ -334,10 +334,10 @@ header {
   /*
   * Content Area
   */
-  .media-body {
+  .sponsor-body {
     padding-top: 65px; }
 
-  .media {
+  .sponsor-media {
     margin: 70px 0 0 auto; }
 
   /*

@@ -1,9 +1,15 @@
 <% if $NoticeMessage %>
 <div class="container">
     <div class="row">
-        <section class="col-sm-12 bulitin">
-            <h3 style="text-align: center">$NoticeMessage</h3>
-        </section>
+        <div class="col-sm-12">
+
+            <section class="card text-center bg-theme">
+                <div class="card-body">
+                    <h3 class="card-title">$NoticeMessage</h3>
+                    <h1>NEXT DRAG RACING EVENT</h1>
+                </div>
+            </section>
+        </div>
     </div><!-- end of /.row -->
 </div><!-- end of / .container-->
 <% else %>

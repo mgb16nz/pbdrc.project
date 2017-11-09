@@ -17,8 +17,8 @@
                     <%--</a>--%>
                 <%--</div>--%>
 
-                <div class="col-md-6 media">
-                    <div class="media-body">
+                <div class="col-md-6 media sponsor-media">
+                    <div class="media-body sponsor-body">
                         <h4 class="text-right">DRIVEN BY</h4>
                     </div>
                     <a class="header-sponsor" href="#" target="_blank"><img src="$ThemeDir/images/sponsors/kelford.jpg" alt=""></a>

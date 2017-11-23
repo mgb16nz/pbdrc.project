@@ -10,8 +10,8 @@ class HomePage extends Page
 {
 
     private static $db = array(
-        'NoticeMessage' => 'Varchar(255)',
-        'PosterAlt' => 'text',
+        'NoticeMessage' => 'Text',
+        'PosterAlt' => 'Text',
         'TitleHeader' => 'Text'
     );
 
@@ -27,8 +27,8 @@ class HomePage extends Page
         *   Main Content section
         */
 
-        // Notice Message Text Display
-        // $fields->addFieldToTab('Root.Main', TextareaField::create('NoticeMessage','Announcement Notification'),'Content');
+        // Next Drag Racing Dates Notification
+//        $fields->addFieldToTab('Root.Main', TextField::create('NoticeMessage','Next Racing Dates'),'Content');
 
         // Title Header
         $fields->addFieldToTab('Root.Main', TextField::create('TitleHeader','Content Header'),'Content');

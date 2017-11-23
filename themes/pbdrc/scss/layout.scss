@@ -148,6 +148,12 @@ header {
   }
 }
 
+
+.nav-link,
+.dropdown-item {
+  text-transform: uppercase;
+}
+
 // dropdown menu items
 .dropdown-item {
 
@@ -179,28 +185,8 @@ header {
  */
 .breadcrumb {
   background-color: $black-base-primary;
-
-  .breadcrumb-item {
-    color: $theme-color-primary;
-
-    // The separator between breadcrumbs (by default, a double-right-angle: "»")
-    + .breadcrumb-item::before {
-      content: "#{$theme-breadcrumb-divider}";
-    }
-  }
-
-  a{
-    color: $theme-color-primary;
-
-    &:hover {
-      color: lighten($theme-color-secondary-2, 10%);
-    }
-  }
-
-  .active {
-    color: $theme-color-secondary-1;
-  }
 }
+
 
 /* SideBar Advert Styling
 ------------------------- */

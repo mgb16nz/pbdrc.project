@@ -1,5 +1,7 @@
     <!-- NAVBAR -->
 
+    <% if $Menu(1) %>
+
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <div class="container">
 
@@ -18,11 +20,11 @@
                                 <a class="nav-item nav-link dropdown-toggle" href="$Link" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     $MenuTitle <% if $LinkingMode = 'current' %><span class="sr-only">(current)</span><% end_if %>
                                 </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                     <% loop $Children %>
                                         <a class="dropdown-item" href="$Link">$MenuTitle</a>
                                     <% end_loop %>
-                                </div>
+                                </ul>
                             </li>
 
                         <% else %>
@@ -40,4 +42,5 @@
         </div>
     </nav>
 
+    <% end_if %>
 

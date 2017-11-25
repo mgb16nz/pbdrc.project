@@ -146,6 +146,9 @@ header {
 /*
  * SideBar SideBarAdvert
  */
+.advert {
+  margin: auto; }
+
 .advert-imgs {
   padding-bottom: 1.25rem; }
 

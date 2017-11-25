@@ -46,9 +46,15 @@ class Page_Controller extends ContentController
         return DataObject::get_by_id('SiteTree', $pageID);
     }
 
-    // Get DataObject from the Advert model from the SideBarPage and passing it onto the SideBar Template
+    // Get DataObject from the SideBarAdvert model from the SideBarPage and passing it onto the SideBar Template
     public function GetSidebar() {
-        if($Advert = DataObject::get('Advert'))
+        if($Advert = DataObject::get('SideBarAdvert'))
+            return $Advert;
+    }
+
+    // Get DataObject from the HeaderAdvert model from the HeaderPage and passing it onto the Header Template
+    public function GetHeader() {
+        if($Advert = DataObject::get('HeaderAdvert'))
             return $Advert;
     }
 }

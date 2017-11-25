@@ -2,11 +2,11 @@
 /**
  * Pegasus Bay Drag Racing Club v1.0.0 (http://www.pbdrc.com)
  * Copyright 2017 Pegasus Bay Drag Racing
- * Customized Advert.php
+ * Customized HeaderAdvert.php
  * Created by SNAP Web Designs (http://www.snapwebdesigns.co.nz)
  */
 
-class Advert extends DataObject {
+class HeaderAdvert extends DataObject {
 
     private static $db = array (
         'AdvertTitle' => 'Varchar',
@@ -17,7 +17,7 @@ class Advert extends DataObject {
 
     private static $has_one = array (
         'AdvertImage' => 'Image',
-        'SideBarPage' => 'SideBarPage'
+        'HeaderPage' => 'HeaderPage'
     );
 
     private static $summary_fields = array (
@@ -37,15 +37,15 @@ class Advert extends DataObject {
 
         $fields->addFieldsToTab('Root.Main', array(
             TextField::create('AdvertTitle','Title'),
-            TextField::create('AdvertAlt','Advert Image Title'),
+            TextField::create('AdvertAlt','Image Title'),
             TextField::create('AdvertURL','Advert Website URL')
                 ->setDescription('example: http://www.site.com  NOT www.site.com'),
-            CheckboxField::create('Active','Advert Active')
+            CheckboxField::create('Active','Header Advert Active')
         ));
 
         $fields->addFieldToTab('Root.Main', $uploader = UploadField::create('AdvertImage','Advert Image'));
 
-        $uploader->setFolderName('Uploads/Adverts');
+        $uploader->setFolderName('Uploads/HeaderAdverts');
         $uploader->getValidator()->setAllowedExtensions(array(
             'png','gif','jpeg','jpg'
         ));

@@ -2,7 +2,7 @@
 /**
  * Pegasus Bay Drag Racing Club v1.0.0 (http://www.pbdrc.com)
  * Copyright 2017 Pegasus Bay Drag Racing
- * Customized ModelAdmin.php
+ * Customized AdvertAdmin.php
  * Created by SNAP Web Designs (http://www.snapwebdesigns.co.nz)
  */
 
@@ -13,7 +13,8 @@ class AdvertAdmin extends ModelAdmin {
     private static $url_segment = 'adverts';
 
     private static $managed_models = array(
-        'Advert',
+        'SideBarAdvert',
+        'HeaderAdvert'
     );
 
 }

@@ -71,8 +71,8 @@ hr {
 
 .sponsor-media {
   //margin: 70px 0 0 auto;
-  padding-bottom: 15px;
-  padding-top: 15px;
+  //padding-bottom: 15px;
+  //padding-top: 15px;
 }
 
 .sponsor-body {
@@ -107,6 +107,7 @@ header {
 
   img {
     display: block;
+    width: 400px;
     max-width: 90%;
     height: auto;
     margin-left: 25px;
@@ -185,13 +186,14 @@ header {
  */
 .breadcrumb {
   background-color: $black-base-primary;
+  text-transform: uppercase;
 }
 
 
-/* SideBar Advert Styling
+/* SideBar SideBarAdvert Styling
 ------------------------- */
 /*
- * SideBar Advert
+ * SideBar SideBarAdvert
  */
 .advert-imgs {
   padding-bottom: 1.25rem;
@@ -440,16 +442,19 @@ header {
     }
   }
 
+  //.sponsor-body {
+  //  padding-top: 65px;
+  //}
+
+  .sponsor-media {
+    margin: 40px 0 0 auto;
+  }
+
+
  /*
  * Content Area
  */
-  .sponsor-body {
-    padding-top: 65px;
-  }
 
-  .sponsor-media {
-    margin: 70px 0 0 auto;
-  }
 
  /*
  * Footer Section

@@ -10,12 +10,18 @@
                 </div>
             </section>
 
+            <% if $AboutInfo %>
+            <% loop $AboutInfo %>
             <section class="card bg-theme">
                 <div class="card-body">
-                    <h2 class="card-title"></h2>
-
+                    <h2 class="card-title">$InfoHeader</h2>
+                    $InfoContent
                 </div>
             </section>
+            <% end_loop %>
+            <% end_if %>
+
+
 
             <% if $Committee %>
             <section id="Committee" class="card bg-theme">

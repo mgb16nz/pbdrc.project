@@ -82,6 +82,19 @@ hr {
     background-color: #F19E14;
     border-color: #F19E14; }
 
+.page-link {
+  background-color: #000000;
+  border: 2px solid #FFE50D;
+  color: #FFE50D; }
+  .page-link:hover {
+    color: #F19E14;
+    background-color: #000000;
+    border-color: #FFE50D; }
+
+.page-item.disabled .page-link {
+  background-color: #000000;
+  border: 2px solid #FFE50D; }
+
 /* Header Styling
 ------------------------- */
 /*
@@ -248,7 +261,7 @@ header {
 /* All Content Styling
 ------------------------- */
 /*
- * Home page notification
+ * Home page
  */
 .bulitin {
   margin-bottom: 30px;
@@ -275,7 +288,13 @@ header {
   background-color: #222222; }
 
 /*
- * Contact page notification
+ * Events page
+ */
+.event-poster {
+  padding: 15px 0; }
+
+/*
+ * Contact page
  */
 .contact {
   list-style-type: none;

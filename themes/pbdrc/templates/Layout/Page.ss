@@ -1,21 +1,9 @@
-<!-- Maint Content Area -->
-<%--<div class="container">--%>
-    <%--<div class="row">--%>
-        <%--<div class="col-md-9">--%>
-            <%--$Content--%>
-        <%--</div>--%>
-
-        <%--<% include SideBar %>--%>
-
-    <%--</div>--%>
-
-<%--</div> <!-- /container -->--%>
-
+<!-- Main Content Area -->
 <div class="container">
     <div class="row">
         <div class="col-sm-9">
 
-            <section class="card text-center bg-theme">
+            <section class="card bg-theme">
                 <div class="card-body">
                     $Content
                 </div>

@@ -9,4 +9,22 @@
 class EventsPage extends Page
 {
 
+
+
+    private static $can_be_root = false;
+
+
+    private static $defaults = array(
+        'ShowInMenus' => false,
+    );
+
+    private static $show_in_sitetree = false;
+
+    public static $has_many = array(
+        'Events' => 'Events'
+    );
+
+
+
+
 }

@@ -94,6 +94,28 @@ hr {
   }
 }
 
+// Pagination
+.page-link {
+  background-color: $black-base-primary;
+  border: 2px solid $theme-color-secondary-1;
+  color: $theme-color-secondary-1;
+
+  &:hover {
+    color: $theme-color-secondary-2;
+    background-color: $black-base-primary;
+    border-color: $theme-color-secondary-1;
+
+  }
+}
+
+.page-item.disabled {
+
+    .page-link {
+      background-color: $black-base-primary;
+      border: 2px solid $theme-color-secondary-1;
+    }
+}
+
 /* Header Styling
 ------------------------- */
 /*
@@ -345,7 +367,7 @@ header {
 /* All Content Styling
 ------------------------- */
 /*
- * Home page notification
+ * Home page
  */
 .bulitin {
   margin-bottom: 30px;
@@ -377,7 +399,14 @@ header {
 }
 
 /*
- * Contact page notification
+ * Events page
+ */
+.event-poster {
+  padding: 15px 0;
+}
+
+/*
+ * Contact page
  */
 .contact {
   list-style-type: none;

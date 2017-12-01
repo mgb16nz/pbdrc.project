@@ -1,14 +1,13 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: barker
- * Date: 1/12/17
- * Time: 12:20
+ * Pegasus Bay Drag Racing Club v1.0.0 (http://www.pbdrc.com)
+ * Copyright 2017 Pegasus Bay Drag Racing
+ * Customized Committee.php
+ * Created by SNAP Web Designs (http://www.snapwebdesigns.co.nz)
  */
 
 class Committee extends DataObject
 {
-
     private static $db = array(
         'MemberTitle' => 'Text',
         'FirstName' => 'Text',

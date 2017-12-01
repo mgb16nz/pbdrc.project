@@ -8,19 +8,34 @@
 
 class AboutPage extends Page
 {
-
     private static $db = array(
         'CHeader' => 'Text'
     );
 
     private static $has_many = array(
-        'Committee' => 'Committee'
+        'Committee' => 'Committee',
+        'AboutInfo' => 'AboutInfo'
     );
-
 
     public function getCMSFields()
     {
         $fields = parent::getCMSFields();
+
+        /*
+        *  Tab Page for About Info
+        */
+
+        // AboutInfo Model
+        $conf=GridFieldConfig_RelationEditor::create(10); // Create a gridfield
+        $conf->addComponent(new GridFieldSortableRows('SortOrder')); // Make it sortable
+
+        // Gridfield from /code/model/Committee.php
+        $fields->addFieldToTab('Root.AboutPageInfo', new GridField('AboutInfo', 'AboutPageInfo', $this->AboutInfo(), $conf));
+
+
+        /*
+        *  Tab Page for Committee Members
+        */
 
         $fields->addFieldToTab('Root.Committee', TextField::create('CHeader', 'Committee Header'));
 

@@ -5,17 +5,17 @@
 
             <section class="card bg-theme">
                 <div class="card-body">
-                    <h2 class="card-title">$Title</h2>
+                    <h2 class="card-title">$MainTitle</h2>
                     $Content
                 </div>
             </section>
 
             <% if $AboutInfo %>
             <% loop $AboutInfo %>
-            <section class="card bg-theme">
+            <section id="AboutInfo" class="card bg-theme">
                 <div class="card-body">
-                    <h2 class="card-title">$InfoHeader</h2>
-                    $InfoContent
+                    <h2 class="card-title">$Title</h2>
+                    $Content
                 </div>
             </section>
             <% end_loop %>
@@ -27,18 +27,12 @@
             <section id="Committee" class="card bg-theme">
                 <div class="card-body">
                     <h2>$CHeader</h2>
-                    <table class="table">
-                        <%--<thead>--%>
-                        <%--<tr>--%>
-                            <%--<th class="col-md-2 col-sm-6" scope="col"><h4>Members Title</h4></th>--%>
-                            <%--<th class="col-md-4 col-sm-6" scope="col"><h4>Members Name</h4></th>--%>
-                        <%--</tr>--%>
-                        <%--</thead>--%>
+                    <table class="table table-responsive">
                         <tbody>
                         <% loop $Committee %>
                         <tr>
-                            <th class="col-md-2 col-sm-6">$MemberTitle</th>
-                            <td class="col-md-4 col-sm-6">$FirstName $LastName</td>
+                            <th class="col-sm-3">$Title</th>
+                            <td class="col-sm-9">$FirstName $LastName</td>
                         </tr>
                         <% end_loop %>
                         </tbody>

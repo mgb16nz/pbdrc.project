@@ -9,26 +9,26 @@
 class SideBarAdvert extends DataObject {
 
     private static $db = array (
-        'AdvertTitle' => 'Varchar',
-        'AdvertURL' => 'Varchar',
-        'AdvertAlt' => 'Varchar',
+        'Title' => 'Varchar',
+        'URL' => 'Varchar',
+        'Alt' => 'Varchar',
         'Active' => 'Boolean(1)',
     );
 
     private static $has_one = array (
-        'AdvertImage' => 'Image',
+        'Image' => 'Image',
         'SideBarPage' => 'SideBarPage'
     );
 
     private static $summary_fields = array (
         'GridThumbnail' => 'Advert Image',
-        'AdvertAlt' => 'Image Title',
-        'AdvertURL' => 'Site URL',
+        'Alt' => 'Image Title',
+        'URL' => 'Site URL',
         'Active.Nice' => 'Active',
     );
 
     public function getGridThumbnail() {
-        return $this->AdvertImage()->exists() ? $this->AdvertImage()->SetWidth(72) : "(no image)";
+        return $this->Image()->exists() ? $this->Image()->SetWidth(72) : "(no image)";
     }
 
     public function getCMSFields() {
@@ -36,14 +36,14 @@ class SideBarAdvert extends DataObject {
         $fields = FieldList::create(TabSet::create('Root'));
 
         $fields->addFieldsToTab('Root.Main', array(
-            TextField::create('AdvertTitle','Title'),
-            TextField::create('AdvertAlt','Image Title'),
-            TextField::create('AdvertURL','Website URL')
+            TextField::create('Title','Title'),
+            TextField::create('Alt','Image Title'),
+            TextField::create('URL','Website URL')
                 ->setDescription('example: http://www.site.com  NOT www.site.com'),
             CheckboxField::create('Active','SideBar Advert Active')
         ));
 
-        $fields->addFieldToTab('Root.Main', $uploader = UploadField::create('AdvertImage','Advert Image'));
+        $fields->addFieldToTab('Root.Main', $uploader = UploadField::create('Image','Advert Image'));
 
         $uploader->setFolderName('Uploads/SideBarAdverts');
         $uploader->getValidator()->setAllowedExtensions(array(

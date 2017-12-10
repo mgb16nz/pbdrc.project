@@ -226,9 +226,6 @@ header {
 
 }
 
-
-
-
 /* Footer Content Styling
 ------------------------- */
 /*
@@ -399,10 +396,21 @@ header {
 }
 
 /*
- * Events page
+ * Event page
  */
 .event-poster {
   padding: 15px 0;
+}
+
+.event {
+
+  p {
+
+    img {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
 }
 
 /*

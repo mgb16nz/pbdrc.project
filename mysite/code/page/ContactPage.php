@@ -9,12 +9,26 @@
 class ContactPage extends Page
 {
     private static $db = array(
+        'MainTitle' => 'Text',
+        'SubTitle' => 'Text',
         'Latitude' => 'Varchar',
         'Longitude' => 'Varchar',
     );
 
-    public function getCMSFields() {
+    public function getCMSFields()
+    {
         $fields = parent::getCMSFields();
+
+        /*
+        *   Main Content section
+        */
+
+        $fields->addFieldToTab('Root.Main', TextField::create('MainTitle', 'Content Header'),'Content');
+        $fields->addFieldToTab('Root.Main', TextField::create('SubTitle', 'Content Sub Header'),'Content');
+
+        /*
+        *   Location Content section
+        */
 
         $fields->addFieldsToTab('Root.Location', array(
             HiddenField::create('Latitude'),

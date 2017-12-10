@@ -8,9 +8,9 @@
             <!-- Contact Details -->
             <section class="card bg-theme">
                 <div class="card-body">
-                    <h2 class="card-title">Contact Details</h2>
+                    <h2 class="card-title">$MainTitle</h2>
                     <br>
-                    <h4 class="card-subtitle">General Enquiries</h4>
+                    <h4 class="card-subtitle">$SubTitle</h4>
                     <br>
                     $Content
                     <br>

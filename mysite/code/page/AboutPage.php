@@ -8,11 +8,12 @@
 
 class AboutPage extends Page
 {
-    private static $db = array(
-        'CHeader' => 'Text'
+    private static $db = array (
+        'Title' => 'Text',
+        'MainTitle' => 'Text'
     );
 
-    private static $has_many = array(
+    public static $has_many = array (
         'Committee' => 'Committee',
         'AboutInfo' => 'AboutInfo'
     );
@@ -22,6 +23,12 @@ class AboutPage extends Page
         $fields = parent::getCMSFields();
 
         /*
+        *   Main Content section
+        */
+
+        $fields->addFieldToTab('Root.Main', TextField::create('MainTitle', 'Content Header'),'Content');
+
+        /*
         *  Tab Page for About Info
         */
 
@@ -29,22 +36,22 @@ class AboutPage extends Page
         $conf=GridFieldConfig_RelationEditor::create(10); // Create a gridfield
         $conf->addComponent(new GridFieldSortableRows('SortOrder')); // Make it sortable
 
-        // Gridfield from /code/model/Committee.php
-        $fields->addFieldToTab('Root.AboutPageInfo', new GridField('AboutInfo', 'AboutPageInfo', $this->AboutInfo(), $conf));
+        // Gridfield from /code/model/AboutInfo.php
+        $fields->addFieldToTab('Root.AboutPageInfo', new GridField('AboutInfo', 'About Page Info', $this->AboutInfo(), $conf));
 
 
         /*
         *  Tab Page for Committee Members
         */
 
-        $fields->addFieldToTab('Root.Committee', TextField::create('CHeader', 'Committee Header'));
+        $fields->addFieldToTab('Root.Members', TextField::create('CHeader', 'Committee Header'));
 
         // Committee Model
         $conf=GridFieldConfig_RelationEditor::create(20); // Create a gridfield
         $conf->addComponent(new GridFieldSortableRows('SortOrder')); // Make it sortable
 
         // Gridfield from /code/model/Committee.php
-        $fields->addFieldToTab('Root.Committee', new GridField('Committee', 'Committee Members', $this->Committee(), $conf));
+        $fields->addFieldToTab('Root.Members', new GridField('Committee', 'Committee Members', $this->Committee(), $conf));
 
         return $fields;
     }

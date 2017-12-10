@@ -39,7 +39,6 @@ class Page_Controller extends ContentController
         Requirements::javascript("{$this->ThemeDir()}/js/vendor/popper.min.js");
         Requirements::javascript("{$this->ThemeDir()}/js/bootstrap.min.js");
         Requirements::javascript("{$this->ThemeDir()}/js/jquey.stellar.js");
-        Requirements::javascript("{$this->ThemeDir()}/js/bootstrap.min.js");
     }
 
     public function PageByID($pageID = 0) {

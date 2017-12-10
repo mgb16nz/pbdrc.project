@@ -9,8 +9,8 @@
 class AboutInfo extends DataObject
 {
     private static $db = array(
-        'InfoHeader' => 'Text',
-        'InfoContent' => 'HTMLText',
+        'Title' => 'Text',
+        'Content' => 'HTMLText',
         'SortOrder' => 'Int'
     );
 
@@ -19,8 +19,8 @@ class AboutInfo extends DataObject
     );
 
     private static $summary_fields = array(
-        'InfoHeader' => 'Header',
-        'InfoContent' => 'Content'
+        'Title' => 'Header',
+        'Content' => 'Content'
     );
 
     public static $default_sort='SortOrder';
@@ -30,8 +30,8 @@ class AboutInfo extends DataObject
     {
         $fields = parent::getCMSFields();
 
-        $fields->addFieldToTab('Root.Main', TextField::create('InfoHeader'));
-        $fields->addFieldToTab('Root.Main', HTMLEditorField::create('InfoContent'));
+        $fields->addFieldToTab('Root.Main', TextField::create('Title', 'Header'));
+        $fields->addFieldToTab('Root.Main', HTMLEditorField::create('Content'));
 
         $fields->removeByName('SortOrder');
         $fields->removeByName('ParentID');

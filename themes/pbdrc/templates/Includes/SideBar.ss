@@ -10,8 +10,8 @@
 
                     <div class="col-md-12">
                         <div class="row">
-                            <a href="$AdvertURL" target="_blank">
-                                <img src="$AdvertImage.URL" class="advert-imgs img-fluid" alt="$AdvertAlt">
+                            <a href="$URL" target="_blank">
+                                <img src="$Image.URL" class="advert-imgs img-fluid" alt="$Alt">
                             </a>
                         </div>
                     </div>

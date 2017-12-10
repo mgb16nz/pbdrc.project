@@ -8,23 +8,25 @@
 
 class EventsPage extends Page
 {
-
-
-
-    private static $can_be_root = false;
-
-
-    private static $defaults = array(
-        'ShowInMenus' => false,
+    private static $has_many = array (
+        'Events' => 'Event'
     );
 
-    private static $show_in_sitetree = false;
+    public function getCMSFields()
+    {
+        $fields = parent::getCMSFields();
 
-    public static $has_many = array(
-        'Events' => 'Events'
-    );
+        // Gridfield from /code/model/Event.php
+        $fields->addFieldToTab('Root.Events', GridField::create(
+            'Events',
+            'PBDRC Upcoming Events',
+            $this->Events(),
+            GridFieldConfig_RecordEditor::create()
+        ));
 
+        // Removes / Disables Theme from Settings
+        $fields->removeByName('Content');
 
-
-
+        return $fields;
+    }
 }

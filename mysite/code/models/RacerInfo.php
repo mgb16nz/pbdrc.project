@@ -19,7 +19,9 @@ class RacerInfo extends DataObject
 
     private static $summary_fields = array(
         'Title' => 'Header',
-        'Content' => 'Content'
+        'Content' => 'Content',
+        'Created' => 'Date Created',
+        'LastEdited' => 'Last Updated'
     );
 
     public static $default_sort='SortOrder';

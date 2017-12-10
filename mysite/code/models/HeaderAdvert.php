@@ -24,7 +24,10 @@ class HeaderAdvert extends DataObject {
         'GridThumbnail' => 'Advert Image',
         'Alt' => 'Image Title',
         'URL' => 'Site URL',
+        'Created' => 'Date Created',
+        'LastEdited' => 'Last Updated',
         'Active.Nice' => 'Active',
+
     );
 
     public function getGridThumbnail() {

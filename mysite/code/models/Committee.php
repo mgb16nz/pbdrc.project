@@ -24,6 +24,8 @@ class Committee extends DataObject
         'Title' => 'Committee Title',
         'FirstName' => 'First Name',
         'LastName' => 'Last Name',
+        'Created' => 'Date Created',
+        'LastEdited' => 'Last Updated'
     );
 
     public static $default_sort='SortOrder';

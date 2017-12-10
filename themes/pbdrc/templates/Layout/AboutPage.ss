@@ -21,12 +21,10 @@
             <% end_loop %>
             <% end_if %>
 
-
-
             <% if $Committee %>
             <section id="Committee" class="card bg-theme">
                 <div class="card-body">
-                    <h2>$CHeader</h2>
+                    <h2>$MemberTitle</h2>
                     <table class="table table-responsive">
                         <tbody>
                         <% loop $Committee %>

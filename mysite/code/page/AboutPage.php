@@ -9,7 +9,7 @@
 class AboutPage extends Page
 {
     private static $db = array (
-        'Title' => 'Text',
+        'MemberTitle' => 'Text',
         'MainTitle' => 'Text'
     );
 
@@ -44,7 +44,7 @@ class AboutPage extends Page
         *  Tab Page for Committee Members
         */
 
-        $fields->addFieldToTab('Root.Members', TextField::create('CHeader', 'Committee Header'));
+        $fields->addFieldToTab('Root.Members', TextField::create('MemberTitle', 'Committee Header'));
 
         // Committee Model
         $conf=GridFieldConfig_RelationEditor::create(20); // Create a gridfield

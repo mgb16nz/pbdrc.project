@@ -8,6 +8,9 @@
 
 class HeaderPage extends Page
 {
+    private static $db = array(
+//        'MainTitle' => 'Text'
+    );
 
     private static $has_one = array(
         'HeaderAdvert' => 'HeaderAdvert'
@@ -16,8 +19,7 @@ class HeaderPage extends Page
 //    public function getCMSFields() {
 //        $fields = parent::getCMSFields();
 //
-//        $conf=GridFieldConfig_RelationEditor::create(10); // Create a gridfield
-//        $conf->addComponent(new GridFieldSortableRows('SortOrder')); // Makes it sortable
+//        $fields->addFieldToTab('Root.Main', TextField::create('MainTitle', 'Content Header'));
 //
 //        return $fields;
 //    }

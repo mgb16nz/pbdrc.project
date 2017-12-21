@@ -1,7 +1,7 @@
 <!-- SIDEBAR - RIGHTSIDE -->
 <aside class="col-md-3">
     <div class="card bg-theme text-center">
-        <div class="card-header">
+        <div class="card-header advert-header">
             <h2>SPONSORS</h2>
         </div>
         <div class="card-body advert">

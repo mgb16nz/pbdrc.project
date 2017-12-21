@@ -19,8 +19,9 @@ class AboutInfo extends DataObject
     );
 
     private static $summary_fields = array(
+        'ID' => 'ID',
         'Title' => 'Header',
-        'Content' => 'Content',
+        'Content.Summary' => 'Content',
         'Created' => 'Date Created',
         'LastEdited' => 'Last Updated'
     );

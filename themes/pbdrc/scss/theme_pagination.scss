@@ -1,0 +1,72 @@
+/*!
+ * EscortSasha Theme v1.0.0 (http://www.escortsasha.co.nz)
+ * Copyright 2016 EscortSasha
+ * Customized Pagination Styling
+ */
+
+// Core variables and mixins
+//@import "variables";
+//@import "mixins";
+@import "pbdrc-custom-theme";
+
+/*
+* Pagination
+*/
+.blog-pagination, .comments-pagination {
+  //text-align: center;
+  justify-content: center;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+
+
+.page-item {
+
+  &.disabled {
+
+    .page-link {
+      color: $white-base-primary;
+    }
+  }
+}
+
+//.page-link {
+//  border-radius: 15px !important;
+//  padding: 4px 10px !important;
+//}
+
+.pagination {
+
+  .active {
+
+    .page-link {
+      background-color: $theme-color-secondary-2;
+      border-color: $theme-color-secondary-1;
+
+      &:hover {
+        background-color: lighten($theme-color-secondary-2, 10%);
+        border-color: $theme-color-secondary-1;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  li {
+
+    .page-link {
+      color: $theme-color-secondary-1;
+      border-color: $theme-color-secondary-1;
+      background-color: $theme-background-color;
+      //margin-left: 5px;
+      //padding: .3rem .75rem;
+
+      &:hover {
+        color: $white-base-primary;
+        background-color: lighten($theme-color-secondary-2, 10%);
+        border-color: $theme-color-secondary-1;
+        text-decoration: underline;
+      }
+    }
+  }
+}

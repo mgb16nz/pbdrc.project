@@ -31,6 +31,7 @@ class Page_Controller extends ContentController
         Requirements::css("{$this->ThemeDir()}/css/bootstrap.min.css");
         Requirements::css("{$this->ThemeDir()}/css/layout.min.css");
         Requirements::css("{$this->ThemeDir()}/css/contact-form.min.css");
+        Requirements::css("{$this->ThemeDir()}/css/theme_pagination.min.css");
         Requirements::css("{$this->ThemeDir()}/css/parallax-scroll.min.css");
         Requirements::css("{$this->ThemeDir()}/css/font-awesome.min.css");
 

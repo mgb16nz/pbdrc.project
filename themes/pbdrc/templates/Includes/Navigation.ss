@@ -7,12 +7,14 @@
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fa fa-bars"></i>
+                <%--MENU--%>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarsExampleDefault">
 
                 <ul class="navbar-nav mr-auto">
 
+                    <% cached 'navigation', $List('SiteTree').max('LastEdited'), $List('SiteTree').count() %>
                     <% loop $Menu(1) %>
 
                         <% if $Children %>
@@ -34,6 +36,7 @@
                         <% end_if %>
 
                     <% end_loop %>
+                    <% end_cached %>
 
                 </ul>
 

@@ -20,10 +20,7 @@ class SiteConfigExtension extends DataExtension
         'FacebookLink' => 'Varchar',
         'TwitterLink' => 'Varchar',
         'YoutubeLink' => 'Varchar',
-        'FBTitle' => 'Varchar',
-        'TTitle' => 'Varchar',
-        'YTTitle' => 'Varchar',
-        'GPTitle' => 'Varchar',
+        'GooglePlus' => 'Varchar',
         // Club Info
         'CIText' => 'HTMLText',
         // Call To Action
@@ -64,13 +61,9 @@ class SiteConfigExtension extends DataExtension
         // Social Media Tab
         $fields->addFieldsToTab('Root.SocialMedia', array (
             TextField::create('FacebookLink','Facebook Link'),
-            TextField::create('FBTitle','FaceBook Title'),
             TextField::create('TwitterLink','Twitter Link'),
-            TextField::create('TTitle','Twitter Title'),
             TextField::create('YoutubeLink','YouTube Link'),
-            TextField::create('YTTitle','YouTube Title'),
             TextField::create('GooglePlus','Goggle Plus Link'),
-            TextField::create('GPTitle','Goggle Plus Title'),
         ));
 
         // Call To Action

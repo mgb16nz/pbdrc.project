@@ -10,6 +10,14 @@ After:
 SSViewer:
   theme: 'pbdrc'
 
+# Adjust the quality of the generated images when they are resized
+ImagickBackend:
+  default_quality: 90
+
+# Produce resampled output
+Image:
+  force_resample: true
+
 # Extending the Siteconfig Activation
 SiteConfig:
   extensions:

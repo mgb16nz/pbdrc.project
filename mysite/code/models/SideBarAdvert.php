@@ -21,11 +21,12 @@ class SideBarAdvert extends DataObject {
     );
 
     private static $summary_fields = array (
+        'ID' => 'ID',
         'GridThumbnail' => 'Advert Image',
         'Alt' => 'Image Title',
         'URL' => 'Site URL',
-        'Created' => 'Date Created',
-        'LastEdited' => 'Last Updated',
+        'Created.Nice' => 'Date Created',
+        'LastEdited.Nice' => 'Last Updated',
         'Active.Nice' => 'Active',
     );
 

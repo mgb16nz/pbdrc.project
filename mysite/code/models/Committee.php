@@ -21,9 +21,11 @@ class Committee extends DataObject
     );
 
     private static $summary_fields = array(
+        'ID' => 'ID',
         'Title' => 'Committee Title',
         'FirstName' => 'First Name',
         'LastName' => 'Last Name',
+        'SortOrder' => 'Order Sorted',
         'Created' => 'Date Created',
         'LastEdited' => 'Last Updated'
     );

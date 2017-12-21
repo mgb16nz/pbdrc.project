@@ -19,9 +19,11 @@ class Event extends DataObject
     );
 
     private static $summary_fields = array (
+        'ID' => 'ID',
+//        'SortOrder' => 'Order Sorted',
         'GridThumbnail' => 'Poster',
         'Title' => 'Event Title',
-        'Description' => 'Description',
+        'Description.Summary' => 'Description',
         'Created.Nice' => 'Date Created',
         'LastEdited.Nice' => 'Last Updated'
     );

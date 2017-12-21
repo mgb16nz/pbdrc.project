@@ -3,22 +3,18 @@
     <div class="row">
         <div class="col-sm-9">
 
-            <section class="card bg-theme">
+            <% if $Results %>
+            <% loop $Results %>
+            <section class="card bg-theme map">
                 <div class="card-body">
-                    <h2 class="card-title">$MainTitle</h2>
-                    $Content
+                    <h2>$Title</h2>
+                    <p class="lead">$SubTitle</p>
+                    <p><small><a href="$ResultsFile.URL" target="_blank">Click here to download PDF Results</a></small></p>
+                    <br>
+                    <img class="card-img" src="$ImageFile.URL" alt="current results">
                 </div>
             </section>
-
-            <% if $RacerInfo %>
-                <% loop $RacerInfo %>
-                    <section id="AboutInfo" class="card bg-theme">
-                        <div class="card-body">
-                            <h2 class="card-title">$Title</h2>
-                            $Content
-                        </div>
-                    </section>
-                <% end_loop %>
+            <% end_loop %>
 
                 <% else %>
 

@@ -136,6 +136,12 @@ header {
   }
 }
 
+.sponsor-body {
+
+  h4 {
+    font-size: $theme-h5-font-size;
+  }
+}
 .header-sponsor {
 
   img {
@@ -214,9 +220,6 @@ header {
 
 /* SideBar SideBarAdvert Styling
 ------------------------- */
-/*
- * SideBar SideBarAdvert
- */
 .advert {
   margin: auto;
 }
@@ -494,11 +497,19 @@ header {
     margin: 40px 0 0 auto;
   }
 
+  /*
+  * SideBar Area
+  */
 
- /*
- * Content Area
- */
-
+  /*
+   * SideBar SideBarAdvert
+   */
+  //.advert-header {
+  //
+  //  h2 {
+  //    font-size: $theme-h3-font-size;
+  //  }
+  //}
 
  /*
  * Footer Section
@@ -536,5 +547,36 @@ header {
   }
 }
 
+//// Large devices (desktops, 992px and up)
+//@media (min-width: 992px) {
+//
+//  /*
+//  * SideBar Area
+//  */
+//
+//  /*
+//   * SideBar SideBarAdvert
+//   */
+//  .advert-header {
+//
+//    h2 {
+//      font-size: $theme-h2-font-size;
+//    }
+//  }
+//
+//}
 
+@media (min-width: 768px) and (max-width: 991px) {
+
+  /*
+   * SideBar SideBarAdvert
+   */
+  .advert-header {
+
+    h2 {
+      font-size: $theme-h3-font-size;
+    }
+  }
+
+}
 

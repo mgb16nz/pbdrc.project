@@ -33,6 +33,10 @@ ErrorDocument 500 /assets/error-500.html
 	RewriteEngine On
 	RewriteBase '/pbdrc.com'
 
+    # Enable HTTP Basic authentication workaround for PHP running in CGI mode
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+
 	
 
 	# Deny access to potentially sensitive files and folders
@@ -45,5 +49,76 @@ ErrorDocument 500 /assets/error-500.html
 	RewriteCond %{REQUEST_URI} ^(.*)$
 	RewriteCond %{REQUEST_FILENAME} !-f
 	RewriteRule .* framework/main.php?url=%1 [QSA]
+</IfModule>
+
+# Reduce the time dynamically, generated pages are cache-able.
+### CACHING START ###
+<IfModule mod_expires.c>
+
+	ExpiresActive on
+	ExpiresByType image/jpg A604800
+	ExpiresByType image/jpeg A604800
+	ExpiresByType image/gif A604800
+	ExpiresByType image/png A604800
+	ExpiresByType image/x-icon A604800
+	ExpiresByType text/css A604800
+	ExpiresByType text/javascript A604800
+	ExpiresByType text/x-javascript A604800
+
+</IfModule>
+
+<IfModule mod_headers.c>
+
+    <FilesMatch "\.(ico|jpe?g|png|gif|swf|flv|mp4|mov|f4v|mp3|aac|m4a)$">
+        Header append Cache-Control "max-age=2592000, public"
+    </FilesMatch>
+    <filesMatch "\.(css)$">
+        Header set Cache-Control "max-age=604800, public"
+    </filesMatch>
+    <filesMatch "\.(js)$">
+        Header set Cache-Control "max-age=604800, public"
+    </filesMatch>
+    <filesMatch "\.(woff|eot|ttf|otf|svg)$">
+        Header set Cache-Control "max-age=2592000, public"
+    </filesMatch>
+	Header unset ETag
+	RequestHeader unset If-Modified-Since
+	RequestHeader unset If-None-Match
+	FileETag None
+
+</IfModule>
+
+<IfModule mod_deflate.c>
+
+	SetOutputFilter DEFLATE
+	BrowserMatch ^Mozilla/4 gzip-only-text/html
+	BrowserMatch ^Mozilla/4\.0[678] no-gzip
+	BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+	# Don't compress images, movies or zip files
+	SetEnvIfNoCase Request_URI \.(?:gif|jpe?g|png)$ no-gzip dont-vary
+	SetEnvIfNoCase Request_URI \.(?:exe|t?gz|zip|bz2|sit|rar)$ no-gzip dont-vary
+	SetEnvIfNoCase Request_URI \.(?:avi|mov|mp3|mp4|rm|flv|swf|mp?g)$ no-gzip dont-vary
+	<IfModule mod_headers.c>
+		# properly handle requests coming from behind proxies
+		Header append Vary User-Agent
+	</IfModule>
+
+</IfModule>
+
+<IfModule mod_deflate.c>
+
+	AddOutputFilterByType DEFLATE text/plain
+	AddOutputFilterByType DEFLATE text/html
+	AddOutputFilterByType DEFLATE text/xml
+	AddOutputFilterByType DEFLATE text/css
+	AddOutputFilterByType DEFLATE text/javascript
+	AddOutputFilterByType DEFLATE application/xml
+	AddOutputFilterByType DEFLATE application/xhtml+xml
+	AddOutputFilterByType DEFLATE application/rss+xml
+	AddOutputFilterByType DEFLATE application/atom_xml
+	AddOutputFilterByType DEFLATE application/javascript
+	AddOutputFilterByType DEFLATE application/x-javascript
+	AddOutputFilterByType DEFLATE application/x-shockwave-flash
+
 </IfModule>
 ### SILVERSTRIPE END ###

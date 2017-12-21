@@ -8,24 +8,25 @@
 
 class HeaderAdvert extends DataObject {
 
-    private static $db = array (
+    private static $db = array(
         'Title' => 'Varchar',
         'URL' => 'Varchar',
         'Alt' => 'Varchar',
         'Active' => 'Boolean(1)',
     );
 
-    private static $has_one = array (
+    private static $has_one = array(
         'Image' => 'Image',
         'HeaderPage' => 'HeaderPage'
     );
 
-    private static $summary_fields = array (
+    private static $summary_fields = array(
+        'ID' => 'ID',
         'GridThumbnail' => 'Advert Image',
         'Alt' => 'Image Title',
         'URL' => 'Site URL',
-        'Created' => 'Date Created',
-        'LastEdited' => 'Last Updated',
+        'Created.Nice' => 'Date Created',
+        'LastEdited.Nice' => 'Last Updated',
         'Active.Nice' => 'Active',
 
     );

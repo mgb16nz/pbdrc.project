@@ -38,3 +38,9 @@ npm-debug.log
 /tagfield
 /datedropdownselectorfield
 
+/silverstripe-googlemapfield-master
+/blog
+data/sql
+silverstripe-googlemapfield-master/css/GoogleMapField.min.css
+themes/pbdrc/css/parallax-scroll.css.map
+themes/simple

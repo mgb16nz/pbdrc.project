@@ -28,7 +28,7 @@ class HomePage extends Page
         */
 
         // Notification Message
-        $fields->addFieldToTab('Root.Main', HTMLEditorField::create('NoticeMessage','Notification Message'),'Content');
+        $fields->addFieldToTab('Root.Main', HTMLEditorField::create('NoticeMessage','Notification Message')->setRows(5),'Content');
 
         // Title Header
         $fields->addFieldToTab('Root.Main', TextField::create('TitleHeader','Content Header'),'Content');

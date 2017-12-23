@@ -1,4 +1,4 @@
-o<% if $NoticeMessage %>
+<% if $NoticeMessage %>
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
